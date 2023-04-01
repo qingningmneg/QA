@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WinApp.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="20">
+                <Image x:Name="image" Source="" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="20">
+                <Label Text="用户名:" />
+                <Entry x:Name="txtUserNo" Placeholder="请输入用户名" IsPassword="False" Margin="10,-20,0,0" WidthRequest="200" TextChanged="txtUserNo_TextChanged"  />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="20" >
+                <Label Text="密  码:" />
+                <Entry x:Name="txtUserPwd" Placeholder="请输入密码"  IsPassword="True" Margin="10,-20,0,0" WidthRequest="200" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="10" HorizontalOptions="Center">
+                <Button x:Name="btnLogin"  Text="登录" Clicked="btnLogin_Clicked" />
+                <Button x:Name="btnRegister" Text="注册" Clicked="btnRegister_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

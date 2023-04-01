@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\visual Studio 2022\\zhuminghang\\QA\\QAText\\QAText.csproj": {}
+  },
+  "projects": {
+    "E:\\visual Studio 2022\\zhuminghang\\QA\\QAText\\QAText.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\visual Studio 2022\\zhuminghang\\QA\\QAText\\QAText.csproj",
+        "projectName": "QAText",
+        "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\QAText\\QAText.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\QAText\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48-windows7.0",
+            "projectReferences": {
+              "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj": {
+                "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48-windows7.0",
+          "dependencies": {
+            "DevExpress.RichEdit.Core": {
+              "target": "Package",
+              "version": "[22.1.4, )"
+            },
+            "DevExpress.Win": {
+              "target": "Package",
+              "version": "[22.1.4, )"
+            },
+            "DevExpress.Win.BonusSkins": {
+              "target": "Package",
+              "version": "[22.1.4, )"
+            },
+            "DevExpress.Win.RichEdit": {
+              "target": "Package",
+              "version": "[22.1.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj",
+        "projectName": "WinControls",
+        "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}

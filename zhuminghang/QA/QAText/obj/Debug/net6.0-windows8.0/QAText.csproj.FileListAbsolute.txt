@@ -1,0 +1,17 @@
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows8.0\QAText.exe
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows8.0\QAText.deps.json
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows8.0\QAText.runtimeconfig.json
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows8.0\QAText.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows8.0\ref\QAText.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows8.0\QAText.pdb
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.FormBase.resources
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.FrmLogin.resources
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.csproj.GenerateResource.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.AssemblyInfoInputs.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.AssemblyInfo.cs
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.csproj.CoreCompileInputs.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\ref\QAText.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.pdb
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows8.0\QAText.genruntimeconfig.cache

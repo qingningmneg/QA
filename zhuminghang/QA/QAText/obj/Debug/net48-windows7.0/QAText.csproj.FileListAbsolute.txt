@@ -1,0 +1,217 @@
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.winfrom.FormBase.resources
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.winfrom.FrmLogin.resources
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.GenerateResource.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.AssemblyInfoInputs.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.AssemblyInfo.cs
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CoreCompileInputs.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.exe.config
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.exe
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.pdb
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.exe
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.pdb
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.Desktop.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Images.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Office.v21.1.Core.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.1.Core.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.1.Drawing.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.PivotGrid.v21.1.Core.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Printing.v21.1.Core.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v21.1.Core.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v21.1.Export.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Sparkline.v21.1.Core.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Utils.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraNavBar.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraWizard.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.BonusSkins.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraGrid.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraBars.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraEditors.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraLayout.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPivotGrid.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPrinting.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraRichEdit.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraTreeList.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraVerticalGrid.v21.1.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\Newtonsoft.Json.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\System.Data.SqlClient.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CopyComplete
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\WinControls.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\WinControls.pdb
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csprojAssemblyReference.cache
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.exe.config
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.exe
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.pdb
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.Desktop.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Images.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Office.v21.2.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.2.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.2.Drawing.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.PivotGrid.v21.2.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Printing.v21.2.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v21.2.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v21.2.Export.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Sparkline.v21.2.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Utils.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraNavBar.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraWizard.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.BonusSkins.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraGrid.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraBars.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraEditors.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraLayout.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPivotGrid.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPrinting.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraRichEdit.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraTreeList.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraVerticalGrid.v21.2.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\Newtonsoft.Json.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\System.Data.SqlClient.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\WinControls.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraEditors.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraRichEdit.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Utils.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraBars.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v21.1.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.Desktop.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Printing.v21.1.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Sparkline.v21.1.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Office.v21.1.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.1.Core.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPrinting.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraLayout.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraGrid.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Images.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.1.Drawing.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraTreeList.v21.1.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\WinControls.pdb
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraEditors.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraRichEdit.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Utils.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraBars.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v21.1.Core.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.Desktop.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Printing.v21.1.Core.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Sparkline.v21.1.Core.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Office.v21.1.Core.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.1.Core.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPrinting.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraLayout.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraGrid.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.1.Drawing.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraTreeList.v21.1.xml
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.XtraEditors.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.XtraEditors.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.XtraEditors.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.XtraEditors.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.XtraRichEdit.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.XtraRichEdit.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.XtraRichEdit.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.XtraRichEdit.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.Utils.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.Utils.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.Utils.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.Utils.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.XtraBars.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.XtraBars.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.XtraBars.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.XtraBars.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.RichEdit.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.RichEdit.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.RichEdit.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.RichEdit.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.Data.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.Data.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.Data.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.Data.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.Printing.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.Printing.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.Printing.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.Printing.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.Sparkline.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.Sparkline.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.Sparkline.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.Sparkline.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.Office.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.Office.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.Office.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.Office.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.Pdf.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.Pdf.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.Pdf.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.Pdf.v21.1.Core.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.XtraPrinting.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.XtraPrinting.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.XtraPrinting.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.XtraPrinting.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.XtraLayout.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.XtraLayout.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.XtraLayout.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.XtraLayout.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.XtraGrid.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.XtraGrid.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.XtraGrid.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.XtraGrid.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\de\DevExpress.XtraTreeList.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\es\DevExpress.XtraTreeList.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ja\DevExpress.XtraTreeList.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\ru\DevExpress.XtraTreeList.v21.1.resources.dll
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.AssemblyReference.cache
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.SuggestedBindingRedirects.cache
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.winfrom.FormBase.resources
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.winfrom.FrmLogin.resources
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.GenerateResource.cache
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.GeneratedMSBuildEditorConfig.editorconfig
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.AssemblyInfoInputs.cache
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.AssemblyInfo.cs
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CoreCompileInputs.cache
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CopyComplete
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.exe
+G:\整个u盘的文件\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.pdb
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.exe.config
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.exe
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\QAText.pdb
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.Desktop.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Drawing.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Images.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Office.v22.1.Core.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v22.1.Core.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v22.1.Drawing.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.PivotGrid.v22.1.Core.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Printing.v22.1.Core.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v22.1.Core.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v22.1.Export.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Sparkline.v22.1.Core.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Utils.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraNavBar.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraWizard.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.BonusSkins.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraGrid.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraBars.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraEditors.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraLayout.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPivotGrid.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPrinting.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraRichEdit.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraTreeList.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraVerticalGrid.v22.1.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\Newtonsoft.Json.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\System.Data.SqlClient.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\WinControls.dll
+E:\visual Studio 2022\zhuminghang\QA\QAText\bin\Debug\net48-windows7.0\WinControls.pdb
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.AssemblyReference.cache
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.SuggestedBindingRedirects.cache
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.winfrom.FormBase.resources
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.winfrom.FrmLogin.resources
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.GenerateResource.cache
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.GeneratedMSBuildEditorConfig.editorconfig
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.AssemblyInfoInputs.cache
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.AssemblyInfo.cs
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CoreCompileInputs.cache
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CopyComplete
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.exe
+E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.pdb

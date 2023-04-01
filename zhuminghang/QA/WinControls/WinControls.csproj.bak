@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{662A6EBF-A32A-46A4-A276-102E744733DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kuade.WinControls</RootNamespace>
+    <AssemblyName>WinControls</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.2.UI, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataVisualization.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Student\Animation.cs" />
+    <Compile Include="ExtOption\ExtAddto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtAddto.Designer.cs">
+      <DependentUpon>ExtAddto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\ExtAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtAnalysis.Designer.cs">
+      <DependentUpon>ExtAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtAnswer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtAnswer.designer.cs">
+      <DependentUpon>ExtAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\ExtJudge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtJudge.Designer.cs">
+      <DependentUpon>ExtJudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\ExtOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtOptions.designer.cs">
+      <DependentUpon>ExtOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\ExtSinglOptionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtSinglOptionList.designer.cs">
+      <DependentUpon>ExtSinglOptionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\ExtOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtOption.Designer.cs">
+      <DependentUpon>ExtOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\ExtMulitOptionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtOption\ExtMulitOptionList.Designer.cs">
+      <DependentUpon>ExtMulitOptionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\FrmText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtOption\FrmText.Designer.cs">
+      <DependentUpon>FrmText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\OptionsType.cs" />
+    <Compile Include="ExtOption\OptionYear.cs" />
+    <Compile Include="Student\StudentButt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\StudentButt.Designer.cs">
+      <DependentUpon>StudentButt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtOption\SqlHelper.cs" />
+    <Compile Include="Student\StudentExtAnswer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\StudentExtAnswer.Designer.cs">
+      <DependentUpon>StudentExtAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentExtJudge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\StudentExtJudge.Designer.cs">
+      <DependentUpon>StudentExtJudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentExtOptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\StudentExtOptions.Designer.cs">
+      <DependentUpon>StudentExtOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentExtSinglOptionList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Student\StudentExtSinglOptionList.Designer.cs">
+      <DependentUpon>StudentExtSinglOptionList.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtOption\ExtAddto.resx">
+      <DependentUpon>ExtAddto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtOption\ExtAnalysis.resx">
+      <DependentUpon>ExtAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtOption\ExtAnswer.resx">
+      <DependentUpon>ExtAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtOption\ExtJudge.resx">
+      <DependentUpon>ExtJudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtOption\ExtOptions.resx">
+      <DependentUpon>ExtOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtOption\ExtSinglOptionList.resx">
+      <DependentUpon>ExtSinglOptionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtOption\ExtOption.resx">
+      <DependentUpon>ExtOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtOption\ExtMulitOptionList.resx">
+      <DependentUpon>ExtMulitOptionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtOption\FrmText.resx">
+      <DependentUpon>FrmText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentButt.resx">
+      <DependentUpon>StudentButt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentExtAnswer.resx">
+      <DependentUpon>StudentExtAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentExtJudge.resx">
+      <DependentUpon>StudentExtJudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentExtOptions.resx">
+      <DependentUpon>StudentExtOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentExtSinglOptionList.resx">
+      <DependentUpon>StudentExtSinglOptionList.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
