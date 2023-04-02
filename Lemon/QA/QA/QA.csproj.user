@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="winfrom\FrmUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\FrmUserEditModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\FrmUserEditPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\FrmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\FrmUserLoginQrcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\FrmUserModifyPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\FrmUserPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\FrmUserRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Student\FrmStudentExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Student\FrmStudentHello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Student\FrmStudentQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Student\FrmStudentUserchoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Student\FrmStudentUserMainFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Student\FrmText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserEditQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserEditSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserEditType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserEditYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserImportAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserMainFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserNewQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserNewType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserNewYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserSearchQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeacherUserYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="winfrom\Teacher\FrmTeachUserEditPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

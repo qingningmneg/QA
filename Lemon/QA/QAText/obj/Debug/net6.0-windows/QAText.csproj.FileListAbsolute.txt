@@ -1,0 +1,17 @@
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows\QAText.exe
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows\QAText.deps.json
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows\QAText.runtimeconfig.json
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows\QAText.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows\ref\QAText.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\bin\Debug\net6.0-windows\QAText.pdb
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.csproj.GenerateResource.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.AssemblyInfoInputs.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.AssemblyInfo.cs
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.csproj.CoreCompileInputs.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\ref\QAText.dll
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.pdb
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.genruntimeconfig.cache
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.FormBase.resources
+C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net6.0-windows\QAText.FrmLogin.resources
