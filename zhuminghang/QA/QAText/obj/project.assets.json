@@ -1428,11 +1428,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\visual Studio 2022\\zhuminghang\\QA\\QAText\\QAText.csproj",
+      "projectUniqueName": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QAText\\QAText.csproj",
       "projectName": "QAText",
-      "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\QAText\\QAText.csproj",
+      "projectPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QAText\\QAText.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\QAText\\obj\\",
+      "outputPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QAText\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
@@ -1457,8 +1457,8 @@
         "net48": {
           "targetAlias": "net48-windows7.0",
           "projectReferences": {
-            "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj": {
-              "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj"
+            "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinControls\\WinControls.csproj": {
+              "projectPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinControls\\WinControls.csproj"
             }
           }
         }

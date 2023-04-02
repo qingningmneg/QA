@@ -51,7 +51,7 @@ namespace QA.winfrom
         /// </summary>
         void txtYearRefrest()
         {
-            var dt = ClassMethod.lemonExamTypeInfo();
+            var dt = ClassMethod.lemonSelectExamTypeInfo();
             if (dt != null && dt.Rows.Count > 0)
             {
                 this.txttype.Properties.Items.Clear();

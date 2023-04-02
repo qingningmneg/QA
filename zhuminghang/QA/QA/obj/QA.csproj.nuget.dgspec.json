@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\visual Studio 2022\\zhuminghang\\QA\\QA\\QA.csproj": {}
+    "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QA\\QA.csproj": {}
   },
   "projects": {
-    "E:\\visual Studio 2022\\zhuminghang\\QA\\QA\\QA.csproj": {
+    "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QA\\QA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\visual Studio 2022\\zhuminghang\\QA\\QA\\QA.csproj",
+        "projectUniqueName": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QA\\QA.csproj",
         "projectName": "QA",
-        "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\QA\\QA.csproj",
+        "projectPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QA\\QA.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\QA\\obj\\",
+        "outputPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QA\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
@@ -36,8 +36,8 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj": {
-                "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj"
+              "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinControls\\WinControls.csproj": {
+                "projectPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinControls\\WinControls.csproj"
               }
             }
           }
@@ -86,11 +86,11 @@
         }
       }
     },
-    "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj": {
+    "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinControls\\WinControls.csproj": {
       "restore": {
-        "projectUniqueName": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj",
+        "projectUniqueName": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinControls\\WinControls.csproj",
         "projectName": "WinControls",
-        "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinControls\\WinControls.csproj",
+        "projectPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinControls\\WinControls.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}

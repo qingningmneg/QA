@@ -94,7 +94,7 @@ namespace QA.winfrom
             {
                 if (card_no != "")
                 {
-                    if (ClassMethod.LemonCardNo(card_no))
+                    if (ClassMethod.lemonCardNo(card_no))
                     {
                         MessageBox.Show("卡号已存在！");
                         return;
@@ -112,14 +112,14 @@ namespace QA.winfrom
             {
                 if (lblUserNos.Text == "正确" && lblUserNames.Text == "正确" && lblReUserPwds.Text == "正确" && lblUserPwds.Text == "正确")
                 {
-                    if (ClassMethod.LemonUserNo(user_no))
+                    if (ClassMethod.lemonUserNo(user_no))
                     {
                         MessageBox.Show("用户名已存在");
                         return;
                     }
                     else
                     {
-                        if (ClassMethod.LemonRegister(("@card_no", card_no, typeof(string).FullName), ("@user_no", user_no, typeof(string).FullName), ("@user_pwd", user_pwd, typeof(string).FullName), ("@user_name", user_name, typeof(string).FullName), ("@photo", PhotoBytes, typeof(byte[]).FullName)))
+                        if (ClassMethod.lemonRegister(("@card_no", card_no, typeof(string).FullName), ("@user_no", user_no, typeof(string).FullName), ("@user_pwd", user_pwd, typeof(string).FullName), ("@user_name", user_name, typeof(string).FullName), ("@photo", PhotoBytes, typeof(byte[]).FullName)))
                         {
                             MessageBox.Show("注册成功");
 

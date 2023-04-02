@@ -69,7 +69,7 @@ namespace QA.file
             webClient.Headers["Accept"] = "application/json";
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
-            var ResultsJson = webClient.UploadString($@"{ServerUrl}/Login", JsonConvert.SerializeObject(new { user_no = user_no, user_pwd = user_pwd }));
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/LemonLogin", JsonConvert.SerializeObject(new { user_no = user_no, user_pwd = user_pwd }));
 
             Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
             return Result;
@@ -134,7 +134,7 @@ namespace QA.file
         /// get 获取所有年份
         /// </summary>
         /// <returns></returns>
-        public static DataTable lemonExamTypeInfo()
+        public static DataTable lemonSelectExamTypeInfo()
         {
             DataTable Result = null;
 
@@ -142,7 +142,7 @@ namespace QA.file
             webClient.Headers["Accept"] = "application/json";
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
-            var ResultsJson = webClient.DownloadString($@"{ServerUrl}/ExamTypeInfo");
+            var ResultsJson = webClient.DownloadString($@"{ServerUrl}/selectExamTypeInfo");
 
             Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
 
@@ -206,7 +206,12 @@ namespace QA.file
             return Result;
         }
 
-        
+        /// <summary>
+        /// 根据考试时间和考试类型查询历年考试信息表
+        /// </summary>
+        /// <param name="exam_time"></param>
+        /// <param name="exam_type_guid"></param>
+        /// <returns></returns>
         public static DataTable lemonSelectExamInfo(string exam_time, string exam_type_guid)
         {
             DataTable Result = new DataTable();
@@ -221,5 +226,22 @@ namespace QA.file
             return Result;
         }
 
+        /// <summary>
+        /// 根据GUID返回考试题目ExamSubjectInfo
+        /// </summary>
+        /// <param name="guid"></param>
+        /// <returns></returns>
+        public static DataTable lemonSelectExamSubjectInfoGUID(string guid) {
+            DataTable Result = new DataTable();
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/SelectExamSubjectInfoGUID", JsonConvert.SerializeObject(new { guid = guid}));
+            Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
+
+            return Result;
+        }
     }
 }

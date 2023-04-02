@@ -2811,11 +2811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinApp\\WinApp.Android\\WinApp.Android.csproj",
+      "projectUniqueName": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp.Android\\WinApp.Android.csproj",
       "projectName": "WinApp.Android",
-      "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinApp\\WinApp.Android\\WinApp.Android.csproj",
+      "projectPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp.Android\\WinApp.Android.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinApp\\WinApp.Android\\obj\\",
+      "outputPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2839,8 +2839,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "E:\\visual Studio 2022\\zhuminghang\\QA\\WinApp\\WinApp\\WinApp.csproj": {
-              "projectPath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinApp\\WinApp\\WinApp.csproj"
+            "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp\\WinApp.csproj": {
+              "projectPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp\\WinApp.csproj"
             }
           }
         }

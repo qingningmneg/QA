@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8QrzjdL2t36sMpNq90KjWkkjMAzrPDrzO4OxDD5RY6YkXUMM2JzxGxvDDK5KCLHsvT+57DXT4XXhU/gTNbdJkQ==",
+  "dgSpecHash": "DkjdtfgaaPg7H8j/CD/ZldvWeqpn4Z0lg+cBzfJ/x4wp/fGpVSBYhCBgUt4/xWz1fPEITxPcHxMn78QtNzvSPQ==",
   "success": true,
-  "projectFilePath": "E:\\visual Studio 2022\\zhuminghang\\QA\\WinApp\\WinApp.Android\\WinApp.Android.csproj",
+  "projectFilePath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp.Android\\WinApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\fastandroidcamera\\2.0.0\\fastandroidcamera.2.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

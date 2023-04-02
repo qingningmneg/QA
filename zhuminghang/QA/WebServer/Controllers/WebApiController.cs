@@ -316,7 +316,7 @@ namespace WebServer.Controllers
         /// <param name="Parameters"></param>
         /// <returns></returns>
         [HttpGet]
-        public ActionResult ExamTypeInfo()
+        public ActionResult selectExamTypeInfo()
         {
             DataTable Result = new DataTable();
 
@@ -325,6 +325,11 @@ namespace WebServer.Controllers
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
 
+        /// <summary>
+        /// 查询指定的考试类型
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult ExamTypeInfoExamType([FromBody] JsonElement Parameters)
         {
@@ -339,6 +344,11 @@ namespace WebServer.Controllers
 
         }
 
+        /// <summary>
+        /// 查询指定的历年考试信息
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult ExamInfoExamTypeInfoGUID([FromBody] JsonElement Parameters)
         {
@@ -352,6 +362,11 @@ namespace WebServer.Controllers
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
 
+        /// <summary>
+        /// 新增考试类型
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult InsertExamInfo([FromBody] JsonElement Parameters)
         {
@@ -373,6 +388,12 @@ namespace WebServer.Controllers
 
         }
 
+        /// <summary>
+        /// 根据考试时间和考试类型查询历年考试信息表
+        /// </summary>
+        /// <param name="exam_time"></param>
+        /// <param name="exam_type_guid"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult SelectExamInfo([FromBody] JsonElement Parameters)
         {
@@ -381,7 +402,6 @@ namespace WebServer.Controllers
             try
             {
                 var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
-                var guid = ParamsJson.guid;
                 var exam_time = ParamsJson.exam_time;
                 var exam_type_guid = ParamsJson.exam_type_guid;
                 var strSql = $@"select * from ExamInfo where exam_time = '{exam_time}' and exam_type_guid = '{exam_type_guid}')";
@@ -391,6 +411,30 @@ namespace WebServer.Controllers
             catch { }
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+
+        /// <summary>
+        /// 根据GUID返回考试题目ExamSubjectInfo
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult SelectExamSubjectInfoGUID([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = null;
+
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var guid = ParamsJson.guid;
+                var strSql = $@"select * from ExamSubjectInfo where guid = '{guid}')";
+                Result = SqlHelper.ExecuteQuery(strSql);
+
+            }
+            catch { }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+
         }
     }
 }

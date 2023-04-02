@@ -62,7 +62,7 @@ namespace QA.winfrom
                 MessageBox.Show("密码不能为空");
                 return;
             }
-            var dt = ClassMethod.LemonLogin(user_no, user_pwd);
+            var dt = ClassMethod.lemonLogin(user_no, user_pwd);
             if (dt != null && dt.Rows.Count > 0)
             {
                 var user_type = Convert.ToInt32(dt.Rows[0]["user_type"]);

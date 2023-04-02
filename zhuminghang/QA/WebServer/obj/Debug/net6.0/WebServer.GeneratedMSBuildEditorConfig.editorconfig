@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebServer
 build_property.RootNamespace = WebServer
-build_property.ProjectDir = E:\visual Studio 2022\zhuminghang\QA\WebServer\
+build_property.ProjectDir = E:\githeb\QA\QA\zhuminghang\QA\WebServer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = E:\visual Studio 2022\zhuminghang\QA\WebServer
+build_property.MSBuildProjectDirectory = E:\githeb\QA\QA\zhuminghang\QA\WebServer
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/visual Studio 2022/zhuminghang/QA/WebServer/Pages/Error.cshtml]
+[E:/githeb/QA/QA/zhuminghang/QA/WebServer/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/visual Studio 2022/zhuminghang/QA/WebServer/Pages/Index.cshtml]
+[E:/githeb/QA/QA/zhuminghang/QA/WebServer/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/visual Studio 2022/zhuminghang/QA/WebServer/Pages/Privacy.cshtml]
+[E:/githeb/QA/QA/zhuminghang/QA/WebServer/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/visual Studio 2022/zhuminghang/QA/WebServer/Pages/Shared/_Layout.cshtml]
+[E:/githeb/QA/QA/zhuminghang/QA/WebServer/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/visual Studio 2022/zhuminghang/QA/WebServer/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[E:/githeb/QA/QA/zhuminghang/QA/WebServer/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/visual Studio 2022/zhuminghang/QA/WebServer/Pages/_ViewImports.cshtml]
+[E:/githeb/QA/QA/zhuminghang/QA/WebServer/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/visual Studio 2022/zhuminghang/QA/WebServer/Pages/_ViewStart.cshtml]
+[E:/githeb/QA/QA/zhuminghang/QA/WebServer/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

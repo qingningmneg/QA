@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KSwiwE8KIsF4sn4ze079+ZUKuLBBSzal7YadiwYzdVlPCJ1Hb2Yc/LAOtJp7q1wMP69jDfOxvEBIeTusF7Xvwg==",
+  "dgSpecHash": "L7PKbys01t6a4A+XxCTyomEo2c2kDhbVpbM3Yx0Lb34n4uWJ8AMAF9zxDPwqGkM9N6udtB9NxrojFj1OfwdFkA==",
   "success": true,
-  "projectFilePath": "E:\\visual Studio 2022\\zhuminghang\\QA\\QA\\QA.csproj",
+  "projectFilePath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QA\\QA.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages\\devexpress.data\\22.1.4\\devexpress.data.22.1.4.nupkg.sha512",
     "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages\\devexpress.data.desktop\\22.1.4\\devexpress.data.desktop.22.1.4.nupkg.sha512",
