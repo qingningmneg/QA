@@ -5,6 +5,8 @@ using DevExpress.XtraRichEdit.SpellChecker;
 using Kuade.WinControls;
 using Kuade.WinControls.ExtOption;
 using Newtonsoft.Json;
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,7 +57,7 @@ namespace QA.winfrom
             try
             {
                 var guid_SubjectChildOptionInfoss = "";
-                var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where guid = @guid".EQ(("@guid", examInfo_guid));//大题
+                var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoGUID(examInfo_guid);//大题
                 if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
                 {
                     // 大题编辑
@@ -399,7 +401,7 @@ namespace QA.winfrom
             txttype.Properties.Items.Add("单选题");
             txttype.Properties.Items.Add("判断题");
             txttype.Properties.Items.Add("问答题");
-            var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where guid = @guid".EQ(("@guid", examInfo_guid));//大题
+            var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoGUID(examInfo_guid);//大题
             if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
             {
                 var guid_ExamSubjectInfo = dt_ExamSubjectInfo.Rows[0]["guid"];
@@ -545,7 +547,7 @@ namespace QA.winfrom
         /// </summary>
         public void DataTabe()
         {
-            var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where guid = @guid".EQ(("@guid", examInfo_guid));//ExamSubjectInfo 题目表
+            var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoGUID(examInfo_guid);//ExamSubjectInfo 题目表
             if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
             {
                 var image = dt_ExamSubjectInfo.Rows[0]["subject_content2"];

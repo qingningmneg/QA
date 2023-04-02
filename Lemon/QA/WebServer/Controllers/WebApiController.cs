@@ -427,7 +427,7 @@ namespace WebServer.Controllers
             {
                 var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
                 var guid = ParamsJson.guid;
-                var strSql = $@"select * from ExamSubjectInfo where guid = '{guid}')";
+                var strSql = $@"select * from ExamSubjectInfo where guid = '{guid}'";
                 Result = SqlHelper.ExecuteQuery(strSql);
 
             }
@@ -435,6 +435,70 @@ namespace WebServer.Controllers
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
 
+        }
+
+        /// <summary>
+        /// 删除年份
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult DeleteExamInfo([FromBody] JsonElement Parameters)
+        {
+            bool Result = false;
+
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var year_guid = ParamsJson.year_guid;
+
+                var dt_ExamInfo = SqlHelper.ExecuteQuery($@"select * from ExamInfo where guid='{year_guid}'");//年份表
+                if (dt_ExamInfo != null && dt_ExamInfo.Rows.Count > 0)
+                {
+                    var ExamInfo_Count = dt_ExamInfo.Rows.Count;
+                    for (int ExamInfo = 0; ExamInfo < ExamInfo_Count; ExamInfo++)//ExamInfo 年份表
+                    {
+                        var ExamInfo_guid = dt_ExamInfo.Rows[ExamInfo]["guid"];
+                        var dt_ExamSubjectInfo = SqlHelper.ExecuteQuery($@"select * from ExamSubjectInfo where exam_guid='{ExamInfo_guid}'");//查询大题表
+                        if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
+                        {
+                            var ExamSubjectInfo_Count = dt_ExamSubjectInfo.Rows.Count;
+                            for (int ExamSubjectInfo = 0; ExamSubjectInfo < ExamSubjectInfo_Count; ExamSubjectInfo++)//ExamSubjectInfo 大题表
+                            {
+                                var ExamSubjectInfo_guid = dt_ExamSubjectInfo.Rows[ExamSubjectInfo]["guid"];
+                                var dt_SubjectChildInfo = SqlHelper.ExecuteQuery($@"select * from SubjectChildInfo where subject_guid='{ExamSubjectInfo_guid}'");//查询小题表
+                                if (dt_SubjectChildInfo != null && dt_SubjectChildInfo.Rows.Count > 0)
+                                {
+                                    var SubjectChildInfo_Count = dt_SubjectChildInfo.Rows.Count;
+                                    for (int SubjectChildInfo = 0; SubjectChildInfo < SubjectChildInfo_Count; SubjectChildInfo++)//SubjectChildInfo小题表
+                                    {
+                                        var SubjectChildInfo_guid = dt_SubjectChildInfo.Rows[SubjectChildInfo]["guid"];
+                                        //SubjectChildOptionInfo 答案表
+                                        var dt_SubjectChildOptionInfo = SqlHelper.ExecuteQuery($@"select * from SubjectChildOptionInfo where subject_child_guid='{SubjectChildInfo_guid}'");//答案表
+                                        if (dt_SubjectChildOptionInfo != null && dt_SubjectChildOptionInfo.Rows.Count > 0)
+                                        {
+                                            SqlHelper.ExecuteNonQuery($"delete from SubjectChildOptionInfo where subject_child_guid='{SubjectChildInfo_guid}'");
+                                        }
+                                    }
+                                    //SubjectChildInfo 小题表
+                                    SqlHelper.ExecuteNonQuery($"delete from SubjectChildInfo where subject_guid='{ExamSubjectInfo_guid}'");
+                                }
+                                //ExamSubjectInfo 大题表
+                            }
+                            SqlHelper.ExecuteNonQuery($"delete from ExamSubjectInfo where exam_guid='{ExamInfo_guid}'");
+                        }
+                        //ExamInfo 年份表
+                    }
+                    SqlHelper.ExecuteNonQuery($"delete from ExamInfo where guid='{year_guid}'");
+                }
+                Result = true;
+            }
+            catch 
+            {
+                Result = false;
+            }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
     }
 }

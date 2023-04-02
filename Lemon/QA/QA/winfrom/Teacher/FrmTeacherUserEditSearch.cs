@@ -1,4 +1,7 @@
 ﻿using DevExpress.XtraEditors;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using WinClient;
 
 namespace QA.winfrom
@@ -56,7 +60,7 @@ namespace QA.winfrom
         {
             this.txtYearRefrest();
             this.person.Clear();
-            var dt = $"select * from ExamTypeInfo".EQ();
+            var dt = ClassMethod.lemonSelectExamTypeInfo();
             if (dt != null && dt.Rows.Count > 0)
             {
                 var dr = dt.Rows.Count;
@@ -79,7 +83,7 @@ namespace QA.winfrom
         /// </summary>
         void txtYearRefrest()
         {
-            var dt = $"select * from ExamTypeInfo".EQ();
+            var dt = ClassMethod.lemonSelectExamTypeInfo();
             if (dt != null && dt.Rows.Count > 0)
             {
                 this.txttype.Properties.Items.Clear();
@@ -104,7 +108,7 @@ namespace QA.winfrom
         /// </summary>
         void ExamTypeInfo()
         {
-            var dt = $"select * from ExamTypeInfo ".EQ();
+            var dt = ClassMethod.lemonSelectExamTypeInfo();
             if (dt != null && dt.Rows.Count > 0)
             {
                 this.txttype.Properties.Items.Clear();
@@ -133,7 +137,7 @@ namespace QA.winfrom
         {
             {
                 this.persons.Clear();
-                var dt = $"select * from ExamTypeInfo".EQ();
+                var dt = ClassMethod.lemonSelectExamTypeInfo();
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     var dr = dt.Rows.Count;
@@ -162,7 +166,7 @@ namespace QA.winfrom
             }
             {
                 this.person.Clear();
-                var dt = $"select * from ExamTypeInfo".EQ();
+                var dt = ClassMethod.lemonSelectExamTypeInfo();
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     var dr = dt.Rows.Count;
@@ -214,7 +218,7 @@ namespace QA.winfrom
                     var user_year = this.txtyear.Text.Trim();
                     if (user_year != "没有找到考题" && user_year != "")
                     {
-                        var dr = $"select * from ExamInfo where exam_time = @exam_time and exam_type_guid =@guid".EQ(("@exam_time", user_year), ("@guid", typeGuid));
+                        var dr = ClassMethod.lemonSelectExamInfo(user_year, typeGuid);
                         if (dr != null && dr.Rows.Count > 0)
                         {
                             this.yearguid = dr.Rows[0]["guid"].ToString();
@@ -239,13 +243,13 @@ namespace QA.winfrom
         {
             {
                 var user_type = this.txttype.Text.Trim();//类型
-                var dt = $"select * from ExamTypeInfo where exam_type = @user_type".EQ(("@user_type", user_type));
+                var dt = ClassMethod.lemonExamTypeInfoExamType(user_type);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.txtyear.Properties.Items.Clear();
                     var guid = dt.Rows[0]["guid"];
                     this.typeGuid = guid.ToString();
-                    var dr = $"select * from ExamInfo where exam_type_guid = @guid".EQ(("@guid", guid));
+                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(guid.ToString());
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         var count = dr.Rows.Count;
@@ -304,7 +308,7 @@ namespace QA.winfrom
             var user_year = this.txtyear.Text.Trim();
             if (user_year != "没有找到考题" && user_year != "")
             {
-                var dr = $"select * from ExamInfo where exam_time = @exam_time and exam_type_guid =@guid".EQ(("@exam_time", user_year), ("@guid", typeGuid));
+                var dr = ClassMethod.lemonSelectExamInfo(user_year, typeGuid);
                 if (dr != null && dr.Rows.Count > 0)
                 {
                     this.yearguid = dr.Rows[0]["guid"].ToString();
@@ -366,13 +370,13 @@ namespace QA.winfrom
         {
             {
                 var user_type = this.txttype.Text.Trim();//类型
-                var dt = $"select * from ExamTypeInfo where exam_type = @user_type".EQ(("@user_type", user_type));
+                var dt = ClassMethod.lemonExamTypeInfoExamType(user_type);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.txtyear.Properties.Items.Clear();
                     var guid = dt.Rows[0]["guid"];
                     this.typeGuid = guid.ToString();
-                    var dr = $"select * from ExamInfo where exam_type_guid = @guid".EQ(("@guid", guid));
+                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(guid.ToString());
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         var count = dr.Rows.Count;

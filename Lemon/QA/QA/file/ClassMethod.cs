@@ -69,7 +69,7 @@ namespace QA.file
             webClient.Headers["Accept"] = "application/json";
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
-            var ResultsJson = webClient.UploadString($@"{ServerUrl}/LemonLogin", JsonConvert.SerializeObject(new { user_no = user_no, user_pwd = user_pwd }));
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/Login", JsonConvert.SerializeObject(new { user_no = user_no, user_pwd = user_pwd }));
 
             Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
             return Result;
@@ -240,6 +240,19 @@ namespace QA.file
             webClient.Encoding = Encoding.UTF8;
             var ResultsJson = webClient.UploadString($@"{ServerUrl}/SelectExamSubjectInfoGUID", JsonConvert.SerializeObject(new { guid = guid}));
             Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
+
+            return Result;
+        }
+
+        public static bool lemonDeleteExamInfo(string year_guid) {
+            bool Result = false;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/DeleteExamInfo", JsonConvert.SerializeObject(new { year_guid = year_guid }));
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
 
             return Result;
         }

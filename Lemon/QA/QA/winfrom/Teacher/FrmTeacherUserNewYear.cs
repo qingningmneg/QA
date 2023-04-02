@@ -1,5 +1,8 @@
 ﻿using DevExpress.Utils;
 using DevExpress.XtraEditors;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using WinClient;
 
 namespace QA.winfrom
@@ -43,7 +47,7 @@ namespace QA.winfrom
         private void FrmTeacherUserNewYear_Load(object sender, EventArgs e)
         {
             this.ExamTypeInfo();
-            
+
             this.Databast();
             #region 初始化 dateEdit控件
             txtStartTime.Properties.VistaDisplayMode = DefaultBoolean.True;
@@ -73,7 +77,7 @@ namespace QA.winfrom
         /// </summary>
         void ExamTypeInfo()
         {
-            var dt = $"select * from ExamTypeInfo ".EQ();
+            var dt = ClassMethod.lemonSelectExamTypeInfo();
             if (dt != null && dt.Rows.Count > 0)
             {
                 this.lbltypeText.Properties.Items.Clear();
@@ -102,7 +106,7 @@ namespace QA.winfrom
         public void Databast()
         {
             var user_type = this.lbltypeText.Text.Trim();//类型
-            var dt_ExamTypeInfo = $"select * from ExamTypeInfo where exam_type = @exam_type".EQ(("exam_type", user_type));
+            var dt_ExamTypeInfo = ClassMethod.lemonExamTypeInfoExamType(user_type);
             if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
             {
                 var ExamTypeInfo_guid = dt_ExamTypeInfo.Rows[0]["guid"];
@@ -110,7 +114,7 @@ namespace QA.winfrom
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.dataGridView.DataSource = dt;
-                    
+
                 }
                 else
                 {
@@ -160,7 +164,7 @@ namespace QA.winfrom
                 return;
             }
 
-            var dt = $@"select * from ExamTypeInfo where exam_type = @exam_type".EQ(("@exam_type", lbltypeText.Text));
+            var dt = ClassMethod.lemonExamTypeInfoExamType(lbltypeText.Text);
             if (dt != null && dt.Rows.Count > 0)
             {
                 var ExamTypeInfoguid = dt.Rows[0]["guid"];//获取属性的guid
@@ -319,7 +323,7 @@ namespace QA.winfrom
         /// <param name="strSelect"></param>
         /// <returns></returns>
         public DataTable LemonYearSelect(string strSelect)
-        { 
+        {
             DataTable dt = new DataTable();
 
 

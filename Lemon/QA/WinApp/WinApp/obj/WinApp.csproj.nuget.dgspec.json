@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp\\WinApp.csproj": {}
+    "E:\\githeb\\QA\\QA\\Lemon\\QA\\WinApp\\WinApp\\WinApp.csproj": {}
   },
   "projects": {
-    "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp\\WinApp.csproj": {
+    "E:\\githeb\\QA\\QA\\Lemon\\QA\\WinApp\\WinApp\\WinApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp\\WinApp.csproj",
+        "projectUniqueName": "E:\\githeb\\QA\\QA\\Lemon\\QA\\WinApp\\WinApp\\WinApp.csproj",
         "projectName": "WinApp",
-        "projectPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp\\WinApp.csproj",
+        "projectPath": "E:\\githeb\\QA\\QA\\Lemon\\QA\\WinApp\\WinApp\\WinApp.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\WinApp\\WinApp\\obj\\",
+        "outputPath": "E:\\githeb\\QA\\QA\\Lemon\\QA\\WinApp\\WinApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",

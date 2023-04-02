@@ -1,4 +1,7 @@
 ﻿using DevExpress.XtraEditors;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using WinClient;
 
 namespace QA.winfrom
@@ -71,7 +75,7 @@ namespace QA.winfrom
             }
             else
             {
-                var dt_ExamTypeInfo = $@"select * from ExamTypeInfo where exam_type=@exam_type".EQ(("@exam_type", txtusertype.Text));//类型
+                var dt_ExamTypeInfo = ClassMethod.lemonExamTypeInfoExamType(txtusertype.Text);//类型
                 if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
                 {
                     MessageBox.Show("类型已存在");

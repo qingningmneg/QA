@@ -1,4 +1,7 @@
 ﻿using DevExpress.XtraEditors;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using WinClient;
 
 namespace QA.winfrom
@@ -34,7 +38,7 @@ namespace QA.winfrom
         /// </summary>
         void ExamTypeInfo()
         {
-            var dt = $"select * from ExamTypeInfo ".EQ();
+            var dt = ClassMethod.lemonSelectExamTypeInfo();
             if (dt != null && dt.Rows.Count > 0)
             {
                 this.txttype.Properties.Items.Clear();
@@ -61,7 +65,7 @@ namespace QA.winfrom
         public void Databast()
         {
             var user_type = this.txttype.Text.Trim();//类型
-            var dt_ExamTypeInfo = $"select * from ExamTypeInfo where exam_type = @exam_type".EQ(("exam_type", user_type));
+            var dt_ExamTypeInfo = ClassMethod.lemonExamTypeInfoExamType(user_type);
             if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
             {
                 var ExamTypeInfo_guid = dt_ExamTypeInfo.Rows[0]["guid"];
@@ -101,46 +105,14 @@ namespace QA.winfrom
                     {
                         var year_guid = Row.Cells["guid"].Value?.ToString();
 
-                        var dt_ExamInfo = $@"select * from ExamInfo where guid=@guid".EQ(("@guid", year_guid));//年份表
-                        if (dt_ExamInfo != null && dt_ExamInfo.Rows.Count > 0)
+                        if (ClassMethod.lemonDeleteExamInfo(year_guid))
                         {
-                            var ExamInfo_Count = dt_ExamInfo.Rows.Count;
-                            for (int ExamInfo = 0; ExamInfo < ExamInfo_Count; ExamInfo++)//ExamInfo 年份表
-                            {
-                                var ExamInfo_guid = dt_ExamInfo.Rows[ExamInfo]["guid"];
-                                var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where exam_guid=@exam_guid".EQ(("@exam_guid", ExamInfo_guid));//查询大题表
-                                if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
-                                {
-                                    var ExamSubjectInfo_Count = dt_ExamSubjectInfo.Rows.Count;
-                                    for (int ExamSubjectInfo = 0; ExamSubjectInfo < ExamSubjectInfo_Count; ExamSubjectInfo++)//ExamSubjectInfo 大题表
-                                    {
-                                        var ExamSubjectInfo_guid = dt_ExamSubjectInfo.Rows[ExamSubjectInfo]["guid"];
-                                        var dt_SubjectChildInfo = $@"select * from SubjectChildInfo where subject_guid=@subject_guid".EQ(("@subject_guid", ExamSubjectInfo_guid));//查询小题表
-                                        if (dt_SubjectChildInfo != null && dt_SubjectChildInfo.Rows.Count > 0)
-                                        {
-                                            var SubjectChildInfo_Count = dt_SubjectChildInfo.Rows.Count;
-                                            for (int SubjectChildInfo = 0; SubjectChildInfo < SubjectChildInfo_Count; SubjectChildInfo++)//SubjectChildInfo小题表
-                                            {
-                                                var SubjectChildInfo_guid = dt_SubjectChildInfo.Rows[SubjectChildInfo]["guid"];
-                                                //SubjectChildOptionInfo 答案表
-                                                var dt_SubjectChildOptionInfo = $@"select * from SubjectChildOptionInfo where subject_child_guid=@subject_child_guid".EQ(("@subject_child_guid", SubjectChildInfo_guid));//答案表
-                                                if (dt_SubjectChildOptionInfo != null && dt_SubjectChildOptionInfo.Rows.Count > 0)
-                                                {
-                                                    $"delete from SubjectChildOptionInfo where subject_child_guid=@subject_child_guid".ENQ(("@subject_child_guid", SubjectChildInfo_guid));
-                                                }
-                                            }
-                                            //SubjectChildInfo 小题表
-                                            $"delete from SubjectChildInfo where subject_guid=@subject_guid".ENQ(("@subject_guid", ExamSubjectInfo_guid));
-                                        }
-                                        //ExamSubjectInfo 大题表
-                                    }
-                                    $"delete from ExamSubjectInfo where exam_guid=@exam_guid".ENQ(("@exam_guid", ExamInfo_guid));
-                                }
-                                //ExamInfo 年份表
-                            }
-                            $"delete from ExamInfo where guid=@guid".ENQ(("@guid", year_guid));
                             MessageBox.Show("删除成功");
                             this.Databast();
+                        }
+                        else
+                        {
+                            MessageBox.Show("删除失败,报错模块FrmTeacherUserYear.cs,报错行数108,报错内容删除失败"); 
                         }
                     }
                 }

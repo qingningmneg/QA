@@ -1,4 +1,6 @@
 ﻿using DevExpress.XtraEditors;
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -69,7 +71,7 @@ namespace QA.winfrom
                 {
                     var ExamInfo_guid = Row.Cells["guid"].Value?.ToString();
 
-                    var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where guid=@guid".EQ(("@guid", ExamInfo_guid));//查询大题表
+                    var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoGUID(ExamInfo_guid);//查询大题表
                     if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
                     {
                         var ExamSubjectInfo_Count = dt_ExamSubjectInfo.Rows.Count;

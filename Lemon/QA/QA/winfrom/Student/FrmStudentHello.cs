@@ -1,5 +1,9 @@
 ﻿using DevExpress.XtraEditors;
+
 using Kuade.WinControls;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,7 +28,7 @@ namespace QA
         private void FrmStudentHello_Load(object sender, EventArgs e)
         {
             FlowLayout.WrapContents = false;
-            var dt = SqlHelper.EQ($"select * from ExamTypeInfo");
+            var dt = ClassMethod.lemonSelectExamTypeInfo();
             if (dt != null && dt.Rows.Count > 0)
             {
                 var dt_Count = dt.Rows.Count;
@@ -54,7 +58,7 @@ namespace QA
             var text = (sender as Button).Text.ToString();
             if (text != null)
             {
-                var dt = SqlHelper.EQ($"select * from ExamTypeInfo where exam_type = @text", ("@text", text));
+                var dt = ClassMethod.lemonExamTypeInfoExamType(text);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     guid = dt.Rows[0]["guid"].ToString();

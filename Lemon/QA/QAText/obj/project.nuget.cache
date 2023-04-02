@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/rU4xGb2hr6LGl3pAMqlcG5/PhHJBk3Jmpg/wVvM22j3PozZz0pz2TJGt/yTNH4vzP8QQz2EgrJPrTOhxsOH0A==",
+  "dgSpecHash": "UoMFb9iP0sxHvVHCKxvqDNLchKOwbHnR6Grv2xV0gHB1pzuvsMjM6rweuTB2JJlQ6TXkG/ldbFVQjNQtnYAxtg==",
   "success": true,
-  "projectFilePath": "E:\\githeb\\QA\\QA\\zhuminghang\\QA\\QAText\\QAText.csproj",
+  "projectFilePath": "E:\\githeb\\QA\\QA\\Lemon\\QA\\QAText\\QAText.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages\\devexpress.data\\22.1.4\\devexpress.data.22.1.4.nupkg.sha512",
     "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages\\devexpress.data.desktop\\22.1.4\\devexpress.data.desktop.22.1.4.nupkg.sha512",

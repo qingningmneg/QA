@@ -1,4 +1,7 @@
 ﻿using DevExpress.XtraEditors;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,7 +62,7 @@ namespace QA
         {
             this.txtYearRefrest();
             this.person.Clear();
-            var dt = $"select * from ExamTypeInfo".EQ();
+            var dt = ClassMethod.lemonSelectExamTypeInfo();
             if (dt != null && dt.Rows.Count > 0)
             {
                 var dr = dt.Rows.Count;
@@ -87,13 +90,13 @@ namespace QA
         {
             {
                 var user_type = this.txtUseryear.EditValue.ToString() ?? "";//类型
-                var dt = $"select * from ExamTypeInfo where exam_type = @user_type".EQ(("@user_type", user_type));
+                var dt = ClassMethod.lemonExamTypeInfoExamType(user_type);
                 if (dt != null && dt.Rows.Count > 0)//当等于空后就等于没有类型
                 {
                     ((DevExpress.XtraEditors.Repository.RepositoryItemComboBox)txtUser.Edit).Items.Clear();
                     var guid = dt.Rows[0]["guid"];
                     this.typeGuid = guid.ToString();
-                    var dr = $"select * from ExamInfo where exam_type_guid = @guid".EQ(("@guid", guid));
+                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(guid.ToString());
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         this.dataGridView.DataSource = dr;
@@ -121,7 +124,7 @@ namespace QA
         {
             {
                 this.persons.Clear();
-                var dt = $"select * from ExamTypeInfo".EQ();
+                var dt = ClassMethod.lemonSelectExamTypeInfo();
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     var dr = dt.Rows.Count;
@@ -150,7 +153,7 @@ namespace QA
             }
             {
                 this.person.Clear();
-                var dt = $"select * from ExamTypeInfo".EQ();
+                var dt = ClassMethod.lemonSelectExamTypeInfo();
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     var dr = dt.Rows.Count;
@@ -169,7 +172,7 @@ namespace QA
             var user_year = this.txtUser.EditValue.ToString() ?? "";
             if (user_year != "目前没有考题" && user_year != "")
             {
-                var dr = $"select * from ExamInfo where exam_time = @exam_time and exam_type_guid =@guid".EQ(("@exam_time", user_year), ("@guid", typeGuid));
+                var dr = ClassMethod.lemonSelectExamInfo(user_year, typeGuid);
                 if (dr != null && dr.Rows.Count > 0)
                 {
                     this.yearguid = dr.Rows[0]["guid"].ToString();
@@ -221,13 +224,13 @@ namespace QA
         {
             {
                 var user_type = this.txtUseryear.EditValue.ToString() ?? "";//类型
-                var dt = $"select * from ExamTypeInfo where exam_type = @user_type".EQ(("@user_type", user_type));//获取科目
+                var dt = ClassMethod.lemonExamTypeInfoExamType(user_type);//获取科目
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     ((DevExpress.XtraEditors.Repository.RepositoryItemComboBox)txtUser.Edit).Items.Clear();//清空下拉框值
                     var guid = dt.Rows[0]["guid"];
                     this.typeGuid = guid.ToString();
-                    var dr = $"select * from ExamInfo where exam_type_guid = @guid".EQ(("@guid", guid));
+                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(guid.ToString());
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         this.dataGridView.DataSource = dr;//为dataGridView绑定值
@@ -281,7 +284,7 @@ namespace QA
         /// </summary>
         void txtYearRefrest()
         {
-            var dt = $"select * from ExamTypeInfo".EQ();//获取科目
+            var dt = ClassMethod.lemonSelectExamTypeInfo();//获取科目
             if (dt != null && dt.Rows.Count > 0)
             {
                 ((DevExpress.XtraEditors.Repository.RepositoryItemComboBox)txtUseryear.Edit).Items.Clear();//清空下拉框

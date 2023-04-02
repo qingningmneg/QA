@@ -1,4 +1,7 @@
 ﻿using DevExpress.XtraEditors;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using WinClient;
 
 namespace QA.winfrom
@@ -60,11 +64,11 @@ namespace QA.winfrom
                     {
                         var exam_type = Row.Cells["exam_type"].Value.ToString().Trim();//类型名称
 
-                        var dt_ExamTypeInfo = $@"select * from ExamTypeInfo where exam_type=@exam_type".EQ(("@exam_type", exam_type));//类型
+                        var dt_ExamTypeInfo = ClassMethod.lemonExamTypeInfoExamType(exam_type);//类型
                         if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
                         {
                             var ExamTypeInfo_guid = dt_ExamTypeInfo.Rows[0]["guid"];
-                            var dt_ExamInfo = $@"select * from ExamInfo where exam_type_guid=@exam_type_guid".EQ(("@exam_type_guid", ExamTypeInfo_guid));//年份表
+                            var dt_ExamInfo = ClassMethod.lemonExamInfoExamTypeInfoGUID(ExamTypeInfo_guid.ToString());//年份表
                             if (dt_ExamInfo != null && dt_ExamInfo.Rows.Count > 0)
                             {
                                 var ExamInfo_Count = dt_ExamInfo.Rows.Count;
@@ -135,7 +139,7 @@ namespace QA.winfrom
         {
             try
             {
-                var dt_ExamTypeInfo = $@"select * from ExamTypeInfo".EQ();//类型
+                var dt_ExamTypeInfo = ClassMethod.lemonSelectExamTypeInfo();//类型
                 if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
                 {
                     this.dataGridView.DataSource = dt_ExamTypeInfo;
