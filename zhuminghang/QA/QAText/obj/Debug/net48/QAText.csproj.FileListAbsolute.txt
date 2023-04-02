@@ -1,8 +1,0 @@
-C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48\QAText.csproj.AssemblyReference.cache
-C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48\QAText.winfrom.FormBase.resources
-C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48\QAText.winfrom.FrmLogin.resources
-C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48\QAText.csproj.GenerateResource.cache
-C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48\QAText.GeneratedMSBuildEditorConfig.editorconfig
-C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48\QAText.AssemblyInfoInputs.cache
-C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48\QAText.AssemblyInfo.cs
-C:\Kuade-WorldSkills-ZuoYe\StageTest_20210623\zhuminghang\QA\QAText\obj\Debug\net48\QAText.csproj.CoreCompileInputs.cache
