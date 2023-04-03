@@ -58,7 +58,7 @@ namespace QA
             var text = (sender as Button).Text.ToString();
             if (text != null)
             {
-                var dt = ClassMethod.lemonExamTypeInfoExamType(text);
+                var dt = ClassMethod.lemonSelectExamTypeInfoExamType(text);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     guid = dt.Rows[0]["guid"].ToString();

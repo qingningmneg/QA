@@ -106,7 +106,7 @@ namespace QA.winfrom
         public void Databast()
         {
             var user_type = this.lbltypeText.Text.Trim();//类型
-            var dt_ExamTypeInfo = ClassMethod.lemonExamTypeInfoExamType(user_type);
+            var dt_ExamTypeInfo = ClassMethod.lemonSelectExamTypeInfoExamType(user_type);
             if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
             {
                 var ExamTypeInfo_guid = dt_ExamTypeInfo.Rows[0]["guid"];
@@ -164,7 +164,7 @@ namespace QA.winfrom
                 return;
             }
 
-            var dt = ClassMethod.lemonExamTypeInfoExamType(lbltypeText.Text);
+            var dt = ClassMethod.lemonSelectExamTypeInfoExamType(lbltypeText.Text);
             if (dt != null && dt.Rows.Count > 0)
             {
                 var ExamTypeInfoguid = dt.Rows[0]["guid"];//获取属性的guid
@@ -232,7 +232,7 @@ namespace QA.winfrom
                     {
                         var year_guid = Row.Cells["guid"].Value?.ToString();
 
-                        var dt_ExamInfo = $@"select * from ExamInfo where guid=@guid".EQ(("@guid", year_guid));//年份表
+                        var dt_ExamInfo = ClassMethod.lemonSelectExamInfoGUID(year_guid);//年份表
                         if (dt_ExamInfo != null && dt_ExamInfo.Rows.Count > 0)
                         {
                             var ExamInfo_Count = dt_ExamInfo.Rows.Count;

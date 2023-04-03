@@ -86,13 +86,13 @@ namespace QA.winfrom
             Animation.ShowControl(this.txtyear, true, AnchorStyles.Bottom);
             {
                 var exam_type = this.txttype.Text.Trim();//类型
-                var dt = ClassMethod.lemonExamTypeInfoExamType(exam_type);
+                var dt = ClassMethod.lemonSelectExamTypeInfoExamType(exam_type);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.txtyear.Properties.Items.Clear();
                     var exam_type_guid = dt.Rows[0]["guid"];
                     this.typeGuid = exam_type_guid.ToString();
-                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(typeGuid);
+                    var dr = ClassMethod.lemonSelectExamInfoExamTypeInfoGUID(typeGuid);
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         var count = dr.Rows.Count;
@@ -127,7 +127,7 @@ namespace QA.winfrom
             {
                 var exam_type = this.txttype.Text.Trim();//类型
 
-                var dt = ClassMethod.lemonExamTypeInfoExamType(exam_type);
+                var dt = ClassMethod.lemonSelectExamTypeInfoExamType(exam_type);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     string ExamInfoGuid = Guid.NewGuid().ToString();//大题guid

@@ -1,4 +1,7 @@
 ﻿using DevExpress.XtraEditors;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -52,12 +55,19 @@ namespace QA.winfrom
 
             if (this.year_guid != null)
             {
-                var dt = $@"select * from ExamInfo where guid = @guid".EQ(("@guid", year_guid));
+                var dt = ClassMethod.lemonSelectExamInfoGUID(year_guid);
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    $@"update ExamInfo set exam_time =@exam_time where guid=@guid".ENQ(("@exam_time", startTime + " -- " + EndTime), ("@guid", year_guid));
-                    MessageBox.Show("编辑成功");
-                    this.Close();
+                    if (ClassMethod.lemonUpdateExamInfo(startTime + " -- " + EndTime, year_guid))
+                    {
+                        MessageBox.Show("编辑成功");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("编辑失败,FrmTeacherUserEditType.cs模块61行报错,报错原因,返回false,服务端方法SelectExamInfoGUID");
+                        return;
+                    }
                 }
             }
         }
@@ -69,7 +79,7 @@ namespace QA.winfrom
         {
             if (this.year_guid != null)
             {
-                var dt = $@"select * from ExamInfo where guid = @guid".EQ(("@guid", year_guid));
+                var dt = ClassMethod.lemonSelectExamInfoGUID(year_guid);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     try

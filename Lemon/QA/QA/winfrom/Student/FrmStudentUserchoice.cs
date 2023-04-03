@@ -90,13 +90,13 @@ namespace QA
         {
             {
                 var user_type = this.txtUseryear.EditValue.ToString() ?? "";//类型
-                var dt = ClassMethod.lemonExamTypeInfoExamType(user_type);
+                var dt = ClassMethod.lemonSelectExamTypeInfoExamType(user_type);
                 if (dt != null && dt.Rows.Count > 0)//当等于空后就等于没有类型
                 {
                     ((DevExpress.XtraEditors.Repository.RepositoryItemComboBox)txtUser.Edit).Items.Clear();
                     var guid = dt.Rows[0]["guid"];
                     this.typeGuid = guid.ToString();
-                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(guid.ToString());
+                    var dr = ClassMethod.lemonSelectExamInfoExamTypeInfoGUID(guid.ToString());
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         this.dataGridView.DataSource = dr;
@@ -224,13 +224,13 @@ namespace QA
         {
             {
                 var user_type = this.txtUseryear.EditValue.ToString() ?? "";//类型
-                var dt = ClassMethod.lemonExamTypeInfoExamType(user_type);//获取科目
+                var dt = ClassMethod.lemonSelectExamTypeInfoExamType(user_type);//获取科目
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     ((DevExpress.XtraEditors.Repository.RepositoryItemComboBox)txtUser.Edit).Items.Clear();//清空下拉框值
                     var guid = dt.Rows[0]["guid"];
                     this.typeGuid = guid.ToString();
-                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(guid.ToString());
+                    var dr = ClassMethod.lemonSelectExamInfoExamTypeInfoGUID(guid.ToString());
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         this.dataGridView.DataSource = dr;//为dataGridView绑定值

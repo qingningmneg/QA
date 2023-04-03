@@ -243,13 +243,13 @@ namespace QA.winfrom
         {
             {
                 var user_type = this.txttype.Text.Trim();//类型
-                var dt = ClassMethod.lemonExamTypeInfoExamType(user_type);
+                var dt = ClassMethod.lemonSelectExamTypeInfoExamType(user_type);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.txtyear.Properties.Items.Clear();
                     var guid = dt.Rows[0]["guid"];
                     this.typeGuid = guid.ToString();
-                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(guid.ToString());
+                    var dr = ClassMethod.lemonSelectExamInfoExamTypeInfoGUID(guid.ToString());
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         var count = dr.Rows.Count;
@@ -370,13 +370,13 @@ namespace QA.winfrom
         {
             {
                 var user_type = this.txttype.Text.Trim();//类型
-                var dt = ClassMethod.lemonExamTypeInfoExamType(user_type);
+                var dt = ClassMethod.lemonSelectExamTypeInfoExamType(user_type);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.txtyear.Properties.Items.Clear();
                     var guid = dt.Rows[0]["guid"];
                     this.typeGuid = guid.ToString();
-                    var dr = ClassMethod.lemonExamInfoExamTypeInfoGUID(guid.ToString());
+                    var dr = ClassMethod.lemonSelectExamInfoExamTypeInfoGUID(guid.ToString());
                     if (dr != null && dr.Rows.Count > 0)
                     {
                         var count = dr.Rows.Count;

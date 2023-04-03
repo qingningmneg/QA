@@ -94,7 +94,7 @@ namespace QA.winfrom
             {
                 if (card_no != "")
                 {
-                    if (ClassMethod.lemonCardNo(card_no))
+                    if (ClassMethod.lemonSelectCardNo(card_no))
                     {
                         MessageBox.Show("卡号已存在！");
                         return;
@@ -112,7 +112,7 @@ namespace QA.winfrom
             {
                 if (lblUserNos.Text == "正确" && lblUserNames.Text == "正确" && lblReUserPwds.Text == "正确" && lblUserPwds.Text == "正确")
                 {
-                    if (ClassMethod.lemonUserNo(user_no))
+                    if (ClassMethod.lemonSelectUserNo(user_no))
                     {
                         MessageBox.Show("用户名已存在");
                         return;

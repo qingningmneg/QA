@@ -65,7 +65,7 @@ namespace QA.winfrom
         public void Databast()
         {
             var user_type = this.txttype.Text.Trim();//类型
-            var dt_ExamTypeInfo = ClassMethod.lemonExamTypeInfoExamType(user_type);
+            var dt_ExamTypeInfo = ClassMethod.lemonSelectExamTypeInfoExamType(user_type);
             if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
             {
                 var ExamTypeInfo_guid = dt_ExamTypeInfo.Rows[0]["guid"];

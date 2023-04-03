@@ -2,6 +2,8 @@
 using Kuade.WinControls;
 using Kuade.WinControls.ExtOption;
 using Newtonsoft.Json;
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -87,7 +89,7 @@ namespace QA.winfrom
 
             if (str_subject_text != null)
             {
-                var dt_ExamInfo = $@"select * from ExamInfo where guid=@guid".EQ(("@guid", year_guid));//判断年份是否存在
+                var dt_ExamInfo = ClassMethod.lemonSelectExamInfoGUID(year_guid);//判断年份是否存在
                 if (dt_ExamInfo != null && dt_ExamInfo.Rows.Count > 0)
                 {
                     var ExamInfoguid = dt_ExamInfo.Rows[0]["guid"];//获取属性的guid

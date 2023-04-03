@@ -6,6 +6,8 @@ using Kuade.WinControls;
 using Kuade.WinControls.ExtOption;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -690,12 +692,13 @@ namespace QA.winfrom
                                 Initial();
                                 if (str_subject_text != null)
                                 {
-                                    var dt_ExamInfo = $@"select * from ExamInfo where guid=@guid".EQ(("@guid", year_guid));//判断年份是否存在
+                                    var dt_ExamInfo = ClassMethod.lemonSelectExamInfoGUID(year_guid);//判断年份是否存在
                                     if (dt_ExamInfo != null && dt_ExamInfo.Rows.Count > 0)
                                     {
                                         var ExamInfoguid = dt_ExamInfo.Rows[0]["guid"];//获取属性的guid
                                         var a = "1";//大题数量
                                         string ExamInfoGuid = Guid.NewGuid().ToString();//大题guid
+
                                         $@"insert into ExamSubjectInfo (subject_content,subject_content2,exam_guid,subject_no,guid) values (@subject_content,@subject_content2,@exam_guid,@subject_no,@guid)".ENQ(("@guid", ExamInfoGuid, typeof(string).FullName), ("@subject_no", a, typeof(string).FullName), ("@subject_content", str_subject_text, typeof(string).FullName), ("@subject_content2", byte_subject_text, typeof(byte[]).FullName), ("@exam_guid", ExamInfoguid, typeof(string).FullName));
                                         var FlowLayoutCount = this.FlowLayout.Controls.Count;//控件数量
                                         for (int i = 0; i < FlowLayoutCount; i++)

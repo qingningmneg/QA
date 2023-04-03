@@ -75,7 +75,7 @@ namespace QA.winfrom
             }
             else
             {
-                var dt_ExamTypeInfo = ClassMethod.lemonExamTypeInfoExamType(txtusertype.Text);//类型
+                var dt_ExamTypeInfo = ClassMethod.lemonSelectExamTypeInfoExamType(txtusertype.Text);//类型
                 if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
                 {
                     MessageBox.Show("类型已存在");
