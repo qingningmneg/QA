@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+
 using QA.file;
 
 using System;
@@ -11,6 +12,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using WinClient;
 
 namespace QA.winfrom
@@ -71,35 +73,13 @@ namespace QA.winfrom
                 {
                     var ExamInfo_guid = Row.Cells["guid"].Value?.ToString();
 
-                    var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoGUID(ExamInfo_guid);//查询大题表
-                    if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
+                    if (ClassMethod.lemonDeleteExamInfo(ExamInfo_guid))
                     {
-                        var ExamSubjectInfo_Count = dt_ExamSubjectInfo.Rows.Count;
-                        for (int ExamSubjectInfo = 0; ExamSubjectInfo < ExamSubjectInfo_Count; ExamSubjectInfo++)//ExamSubjectInfo 大题表
-                        {
-                            var ExamSubjectInfo_guid = dt_ExamSubjectInfo.Rows[ExamSubjectInfo]["guid"];
-                            var dt_SubjectChildInfo = $@"select * from SubjectChildInfo where subject_guid=@subject_guid".EQ(("@subject_guid", ExamSubjectInfo_guid));//查询小题表
-                            if (dt_SubjectChildInfo != null && dt_SubjectChildInfo.Rows.Count > 0)
-                            {
-                                var SubjectChildInfo_Count = dt_SubjectChildInfo.Rows.Count;
-                                for (int SubjectChildInfo = 0; SubjectChildInfo < SubjectChildInfo_Count; SubjectChildInfo++)//SubjectChildInfo小题表
-                                {
-                                    var SubjectChildInfo_guid = dt_SubjectChildInfo.Rows[SubjectChildInfo]["guid"];
-                                    //SubjectChildOptionInfo 答案表
-                                    var dt_SubjectChildOptionInfo = $@"select * from SubjectChildOptionInfo where subject_child_guid=@subject_child_guid".EQ(("@subject_child_guid", SubjectChildInfo_guid));//答案表
-                                    if (dt_SubjectChildOptionInfo != null && dt_SubjectChildOptionInfo.Rows.Count > 0)
-                                    {
-                                        $"delete from SubjectChildOptionInfo where subject_child_guid=@subject_child_guid".ENQ(("@subject_child_guid", SubjectChildInfo_guid));
-                                    }
-                                }
-                                //SubjectChildInfo 小题表
-                                $"delete from SubjectChildInfo where subject_guid=@subject_guid".ENQ(("@subject_guid", ExamSubjectInfo_guid));
-                            }
-                            //ExamSubjectInfo 大题表
-                        }
-                        $"delete from ExamSubjectInfo where guid=@guid".ENQ(("@guid", ExamInfo_guid));
                         MessageBox.Show("删除成功");
                         this.data();//刷新
+                    }
+                    else { 
+                    
                     }
                 }
             }
@@ -126,7 +106,7 @@ namespace QA.winfrom
         /// </summary>
         public void data()
         {
-            var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where exam_guid=@exam_guid ORDER BY ruid".EQ(("@exam_guid", year_guid));//查询大题表
+            var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoExam_guid(year_guid);//查询大题表
             if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
             {
                 dataGridView.DataSource = dt_ExamSubjectInfo;
@@ -142,8 +122,8 @@ namespace QA.winfrom
             try
             {
                 var user_text = this.txtUserText.EditValue.ToString();//内容
-                var emm = "%" + user_text + "%";
-                var dt = $"select * from ExamSubjectInfo where exam_guid = @exam_guid and subject_content LIKE @subject_content".EQ(("@subject_content", emm), ("@exam_guid", year_guid));
+                var subject_content = "%" + user_text + "%";
+                var dt = $"select * from ExamSubjectInfo where exam_guid = @exam_guid and subject_content LIKE @subject_content".EQ(("@subject_content", subject_content), ("@exam_guid", year_guid));
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.dataGridView.DataSource = dt;
@@ -172,6 +152,7 @@ namespace QA.winfrom
                 timer.Start();
             }
         }
+
         #region 内存回收
         [DllImport("kernel32.dll", EntryPoint = "SetProcessWorkingSetSize")]
         public static extern int SetProcessWorkingSetSize(IntPtr process, int minSize, int maxSize);
@@ -192,8 +173,9 @@ namespace QA.winfrom
 
         private void FrmTeacherUserSearchQuestions_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ClearMemory();
             timer.Stop();
+
+            ClearMemory();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

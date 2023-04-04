@@ -239,7 +239,7 @@ namespace QA.winfrom
                             for (int ExamInfo = 0; ExamInfo < ExamInfo_Count; ExamInfo++)//ExamInfo 年份表
                             {
                                 var ExamInfo_guid = dt_ExamInfo.Rows[ExamInfo]["guid"];
-                                var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where exam_guid=@exam_guid".EQ(("@exam_guid", ExamInfo_guid));//查询大题表
+                                var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoExam_guid(ExamInfo_guid.ToString());//查询大题表
                                 if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
                                 {
                                     var ExamSubjectInfo_Count = dt_ExamSubjectInfo.Rows.Count;

@@ -2,10 +2,13 @@
 using DevExpress.XtraEditors;
 using DevExpress.XtraRichEdit;
 using DevExpress.XtraRichEdit.SpellChecker;
+
 using Kuade.WinControls;
 using Kuade.WinControls.ExtOption;
+
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+
 using QA.file;
 
 using System;
@@ -21,7 +24,9 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using WinControls;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Taskbar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify;
 
@@ -699,11 +704,11 @@ namespace QA.winfrom
                                         var a = "1";//大题数量
                                         string ExamInfoGuid = Guid.NewGuid().ToString();//大题guid
 
-                                        $@"insert into ExamSubjectInfo (subject_content,subject_content2,exam_guid,subject_no,guid) values (@subject_content,@subject_content2,@exam_guid,@subject_no,@guid)".ENQ(("@guid", ExamInfoGuid, typeof(string).FullName), ("@subject_no", a, typeof(string).FullName), ("@subject_content", str_subject_text, typeof(string).FullName), ("@subject_content2", byte_subject_text, typeof(byte[]).FullName), ("@exam_guid", ExamInfoguid, typeof(string).FullName));
+                                        ClassMethod.lemonInsertExamSubjectInfo(("@guid", ExamInfoGuid, typeof(string).FullName), ("@subject_no", a, typeof(string).FullName), ("@subject_content", str_subject_text, typeof(string).FullName), ("@subject_content2", byte_subject_text, typeof(byte[]).FullName), ("@exam_guid", ExamInfoguid, typeof(string).FullName));
                                         var FlowLayoutCount = this.FlowLayout.Controls.Count;//控件数量
                                         for (int i = 0; i < FlowLayoutCount; i++)
                                         {
-                                            var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where exam_guid=@exam_guid".EQ(("@exam_guid", year_guid));//判断大题是否存在
+                                            var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoExam_guid(year_guid);//判断大题是否存在
                                             if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
                                             {
                                                 string SubjectChildInfoGuid = Guid.NewGuid().ToString();//小题guid
@@ -776,7 +781,7 @@ namespace QA.winfrom
                                         }
                                     }
                                 }
-                            
+
                             }
                             Delete();
                             Refrests();

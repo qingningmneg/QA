@@ -1,7 +1,10 @@
 ﻿using DevExpress.XtraEditors;
+
 using Kuade.WinControls;
 using Kuade.WinControls.ExtOption;
+
 using Newtonsoft.Json;
+
 using QA.file;
 
 using System;
@@ -14,6 +17,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using WinClient;
 
 namespace QA.winfrom
@@ -99,7 +103,7 @@ namespace QA.winfrom
                     var FlowLayoutCount = this.FlowLayout.Controls.Count;//控件数量
                     for (int i = 0; i < FlowLayoutCount; i++)
                     {
-                        var dt_ExamSubjectInfo = $@"select * from ExamSubjectInfo where exam_guid=@exam_guid".EQ(("@exam_guid", year_guid));//判断大题是否存在
+                        var dt_ExamSubjectInfo = ClassMethod.lemonSelectExamSubjectInfoExam_guid(year_guid);//判断大题是否存在
                         if (dt_ExamSubjectInfo != null && dt_ExamSubjectInfo.Rows.Count > 0)
                         {
                             string SubjectChildInfoGuid = Guid.NewGuid().ToString();//小题guid

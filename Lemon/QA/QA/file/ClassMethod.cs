@@ -93,6 +93,25 @@ namespace QA.file
 
             return Result;
         }
+
+        /// <summary>
+        /// post 新增考试题目
+        /// </summary>
+        /// <param name="Params">string card_no,string user_no,string user_pwd,string user_name,byte[] photo</param>
+        /// <returns></returns>
+        public static bool lemonInsertExamSubjectInfo(params (string, object, string)[] Params)
+        {
+            bool Result = false;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/Register", JsonConvert.SerializeObject(new { Params = Params }));
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
+
+            return Result;
+        }
         #endregion
 
         #region 删除
@@ -319,6 +338,33 @@ namespace QA.file
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
             var ResultsJson = webClient.UploadString($@"{ServerUrl}/SelectExamInfoGUID", JsonConvert.SerializeObject(new { guid = guid }));
+            Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
+
+            return Result;
+        }
+
+        public static DataTable lemonSelectExamSubjectInfoExam_guid(string exam_guid)
+        {
+            DataTable Result = new DataTable();
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/SelectExamSubjectInfoExam_guid", JsonConvert.SerializeObject(new { exam_guid = exam_guid }));
+            Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
+
+            return Result;
+        }
+        public static DataTable lemonSelectExamSubjectInfoLIKE(string exam_guid,string subject_content)
+        {
+            DataTable Result = new DataTable();
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/SelectExamSubjectInfoExam_guid", JsonConvert.SerializeObject(new { exam_guid = exam_guid, subject_content = subject_content }));
             Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
 
             return Result;

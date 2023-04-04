@@ -280,20 +280,45 @@ namespace WebServer.Controllers
 
             try
             {
+                var strSql = $@"insert into ExamSubjectInfo (subject_content,subject_content2,exam_guid,subject_no,guid) values (@subject_content,@subject_content2,@exam_guid,@subject_no,@guid)";
                 var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
-                var guid = ParamsJson.guid;
-                var subject_content = ParamsJson.subject_content;
-                var subject_content2 = ParamsJson.subject_content2;
-                var exam_guid = ParamsJson.exam_guid;
-                var subject_no = ParamsJson.subject_no;
-                string strSql = $@"insert into ExamSubjectInfo (subject_content,subject_content2,exam_guid,subject_no,guid) values ('{subject_content}','{subject_content2}','{exam_guid}','{subject_no}','{guid}')";
-                SqlHelper.ExecuteNonQuery(strSql);
+
+                var Params = (dynamic)ParamsJson.Params;
+                List<(string, object, string)> SqlParams = new List<(string, object, string)>();
+                if (Params != null)
+                {
+                    foreach (var item in Params)
+                    {
+                        var Item1 = Convert.ToString(item.Item1);
+                        var Item3 = Convert.ToString(item.Item3);
+                        object Item2 = null;
+                        if (string.IsNullOrEmpty(Item3) == true)
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+                        else if (Item3 == typeof(byte[]).FullName)
+                        {
+                            Item2 = (byte[])item.Item2;
+                        }
+                        else
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+
+                        SqlParams.Add((Item1, Item2, Item3));
+                    }
+                }
+
+                SqlHelper.ExecuteNonQuery(strSql, SqlParams);
+
                 Result = true;
             }
-            catch { }
+            catch
+            {
+                Result = false;
+            }
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
-
         }
         #endregion
 
@@ -650,6 +675,54 @@ namespace WebServer.Controllers
                 var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
                 var guid = ParamsJson.guid;
                 var strSql = $@"select * from ExamInfo where guid = '{guid}'";
+                Result = SqlHelper.ExecuteQuery(strSql);
+            }
+            catch { }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+
+        }
+
+        /// <summary>
+        /// 根据GUID返回历年考试信息ExamInfo
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult SelectExamSubjectInfoExam_guid([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = null;
+
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var exam_guid = ParamsJson.exam_guid;
+                var strSql = $@"select * from ExamSubjectInfo where exam_guid = '{exam_guid}'";
+                Result = SqlHelper.ExecuteQuery(strSql);
+            }
+            catch { }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+
+        }
+
+
+        /// <summary>
+        /// 根据GUID返回历年考试信息ExamInfo
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult SelectExamSubjectInfoLIKE([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = null;
+
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var exam_guid = ParamsJson.exam_guid;
+                var subject_content = ParamsJson.subject_content;
+                var strSql = $@"select * from ExamSubjectInfo where exam_guid = '{exam_guid}' and subject_content LIKE '{subject_content}'";
                 Result = SqlHelper.ExecuteQuery(strSql);
             }
             catch { }
