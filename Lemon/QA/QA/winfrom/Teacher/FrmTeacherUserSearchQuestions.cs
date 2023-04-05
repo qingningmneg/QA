@@ -78,15 +78,18 @@ namespace QA.winfrom
                         MessageBox.Show("删除成功");
                         this.data();//刷新
                     }
-                    else { 
-                    
+                    else
+                    {
+                        MessageBox.Show("删除失败,返回值false,报错模块FrmStudentQuestions.cs,客户端报错方法 btndelete_ItemClick ,使用服务端方法DeleteExamInfo");
+                        return;
                     }
                 }
             }
             catch
             {
+                MessageBox.Show("删除失败,程序报错,报错片段69-88行");
+                return;
             }
-
         }
 
         private void btnRefrest_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -123,7 +126,7 @@ namespace QA.winfrom
             {
                 var user_text = this.txtUserText.EditValue.ToString();//内容
                 var subject_content = "%" + user_text + "%";
-                var dt = $"select * from ExamSubjectInfo where exam_guid = @exam_guid and subject_content LIKE @subject_content".EQ(("@subject_content", subject_content), ("@exam_guid", year_guid));
+                var dt = ClassMethod.lemonSelectExamSubjectInfoLIKE(year_guid, subject_content);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.dataGridView.DataSource = dt;
@@ -170,7 +173,11 @@ namespace QA.winfrom
         }
         #endregion
 
-
+        /// <summary>
+        /// 取消按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FrmTeacherUserSearchQuestions_FormClosed(object sender, FormClosedEventArgs e)
         {
             timer.Stop();

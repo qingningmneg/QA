@@ -69,7 +69,7 @@ namespace QA.winfrom
             if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
             {
                 var ExamTypeInfo_guid = dt_ExamTypeInfo.Rows[0]["guid"];
-                var dt = $"select *,sc='删除' from ExamInfo where exam_type_guid = @exam_type_guid".EQ(("exam_type_guid", ExamTypeInfo_guid));
+                var dt = ClassMethod.lemonSelectExamInfoDelete(ExamTypeInfo_guid.ToString());
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     this.dataGridView.DataSource = dt;
@@ -112,7 +112,7 @@ namespace QA.winfrom
                         }
                         else
                         {
-                            MessageBox.Show("删除失败,报错模块FrmTeacherUserYear.cs,报错行数108,报错内容删除失败"); 
+                            MessageBox.Show("删除失败,报错模块FrmTeacherUserYear.cs,客户端报错方法 dataGridView_CellContentClick ,报错内容删除失败");
                         }
                     }
                 }

@@ -715,42 +715,56 @@ namespace QA.winfrom
 
                                                 if (txttype.Text == "单选题")
                                                 {
-                                                    $@"insert into SubjectChildInfo(guid,subject_guid,subject_child_no,subject_child_type)values(@guid,@subject_guid,@subject_child_no,@subject_child_type)".ENQ(("@subject_child_type", 0, typeof(int).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName), ("@subject_guid", ExamInfoGuid, typeof(string).FullName), ("@subject_child_no", i, typeof(int).FullName));
-                                                    ExtSinglOptionList ExtSinglOptionLists = (ExtSinglOptionList)this.FlowLayout.Controls[i];
-                                                    dynamic json = JsonConvert.DeserializeObject(ExtSinglOptionLists.eddText());
-                                                    var strText = json.strText;
-                                                    var count = json.Eng.Count;
-                                                    var Eng = json.Eng;
-                                                    var btyText = json.btyText;
-                                                    var Enabled = json.Enabled;
-                                                    string addTexts = json.addText;
-                                                    for (int b = 0; b < count; b++)
+                                                    if (ClassMethod.lemonInsertSubjectChildInfo(("@subject_child_type", 0, typeof(int).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName), ("@subject_guid", ExamInfoGuid, typeof(string).FullName), ("@subject_child_no", i, typeof(int).FullName)))
                                                     {
-                                                        string SubjectChildOptionInfoGuid = Guid.NewGuid().ToString();//答案guid SubjectChildInfoGuid
-                                                        $@"insert into SubjectChildOptionInfo(guid,subject_child_guid,option_no,option_content,option_content2,answer)values(@guid,@subject_child_guid,@option_no,@option_content,@option_content2,@answer)".ENQ(("@guid", SubjectChildOptionInfoGuid, typeof(string).FullName), ("@subject_child_guid", SubjectChildInfoGuid, typeof(string).FullName), ("@option_no", Eng[b], typeof(string).FullName), ("@option_content", strText[b], typeof(string).FullName), ("@option_content2", btyText[b], typeof(byte[]).FullName), ("@answer", Enabled[b], typeof(string).FullName));
+                                                        ExtSinglOptionList ExtSinglOptionLists = (ExtSinglOptionList)this.FlowLayout.Controls[i];
+                                                        dynamic json = JsonConvert.DeserializeObject(ExtSinglOptionLists.eddText());
+                                                        var strText = json.strText;
+                                                        var count = json.Eng.Count;
+                                                        var Eng = json.Eng;
+                                                        var btyText = json.btyText;
+                                                        var Enabled = json.Enabled;
+                                                        string addTexts = json.addText;
+                                                        for (int b = 0; b < count; b++)
+                                                        {
+                                                            string SubjectChildOptionInfoGuid = Guid.NewGuid().ToString();//答案guid SubjectChildInfoGuid
+                                                            $@"insert into SubjectChildOptionInfo(guid,subject_child_guid,option_no,option_content,option_content2,answer)values(@guid,@subject_child_guid,@option_no,@option_content,@option_content2,@answer)".ENQ(("@guid", SubjectChildOptionInfoGuid, typeof(string).FullName), ("@subject_child_guid", SubjectChildInfoGuid, typeof(string).FullName), ("@option_no", Eng[b], typeof(string).FullName), ("@option_content", strText[b], typeof(string).FullName), ("@option_content2", btyText[b], typeof(byte[]).FullName), ("@answer", Enabled[b], typeof(string).FullName));
+                                                        }
+                                                        var addText = SqlHelper.RtxToBytes(addTexts);
+                                                        ClassMethod.lemonUpdateSubjectChildInfo(addText.ToString(), SubjectChildInfoGuid);
                                                     }
-                                                    var addText = SqlHelper.RtxToBytes(addTexts);
-                                                    $@"update SubjectChildInfo set subject_child_analysis2=@subject_child_analysis2 where guid = @guid".ENQ(("@subject_child_analysis2", addText, typeof(byte[]).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName));
+                                                    else
+                                                    {
+                                                        MessageBox.Show("新增失败");
+                                                        return;
+                                                    }
                                                 }
                                                 if (txttype.Text == "多选题")
                                                 {
-                                                    $@"insert into SubjectChildInfo(guid,subject_guid,subject_child_no,subject_child_type)values(@guid,@subject_guid,@subject_child_no,@subject_child_type)".ENQ(("@subject_child_type", 1, typeof(int).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName), ("@subject_guid", ExamInfoGuid, typeof(string).FullName), ("@subject_child_no", i, typeof(int).FullName));
-                                                    ExtMulitOptionList ExtMulitOptionLists = (ExtMulitOptionList)this.FlowLayout.Controls[i];
-                                                    dynamic json = JsonConvert.DeserializeObject(ExtMulitOptionLists.eddText());
-                                                    var EngOne = json.EngOne;
-                                                    var count = json.EngOne.Count;
-                                                    var bytText = json.bytText;
-                                                    var EnabledOne = json.EnabledOne;
-                                                    var strTexts = json.strTexts;
-                                                    string addTexts = json.addText;
-                                                    var addText = SqlHelper.RtxToBytes(addTexts);
-
-                                                    for (int b = 0; b < count; b++)
+                                                    if (ClassMethod.lemonInsertSubjectChildInfo(("@subject_child_type", 1, typeof(int).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName), ("@subject_guid", ExamInfoGuid, typeof(string).FullName), ("@subject_child_no", i, typeof(int).FullName)))
                                                     {
-                                                        string SubjectChildOptionInfoGuid = Guid.NewGuid().ToString();//答案guid SubjectChildInfoGuid
-                                                        $@"insert into SubjectChildOptionInfo(guid,subject_child_guid,option_no,option_content,option_content2,answer)values(@guid,@subject_child_guid,@option_no,@option_content,@option_content2,@answer)".ENQ(("@guid", SubjectChildOptionInfoGuid, typeof(string).FullName), ("@subject_child_guid", SubjectChildInfoGuid, typeof(string).FullName), ("@option_no", EngOne[b], typeof(string).FullName), ("@option_content", strTexts[b], typeof(string).FullName), ("@option_content2", bytText[b], typeof(byte[]).FullName), ("@answer", EnabledOne[b], typeof(string).FullName));
+                                                        ExtMulitOptionList ExtMulitOptionLists = (ExtMulitOptionList)this.FlowLayout.Controls[i];
+                                                        dynamic json = JsonConvert.DeserializeObject(ExtMulitOptionLists.eddText());
+                                                        var EngOne = json.EngOne;
+                                                        var count = json.EngOne.Count;
+                                                        var bytText = json.bytText;
+                                                        var EnabledOne = json.EnabledOne;
+                                                        var strTexts = json.strTexts;
+                                                        string addTexts = json.addText;
+                                                        var addText = SqlHelper.RtxToBytes(addTexts);
+
+                                                        for (int b = 0; b < count; b++)
+                                                        {
+                                                            string SubjectChildOptionInfoGuid = Guid.NewGuid().ToString();//答案guid SubjectChildInfoGuid
+                                                            $@"insert into SubjectChildOptionInfo(guid,subject_child_guid,option_no,option_content,option_content2,answer)values(@guid,@subject_child_guid,@option_no,@option_content,@option_content2,@answer)".ENQ(("@guid", SubjectChildOptionInfoGuid, typeof(string).FullName), ("@subject_child_guid", SubjectChildInfoGuid, typeof(string).FullName), ("@option_no", EngOne[b], typeof(string).FullName), ("@option_content", strTexts[b], typeof(string).FullName), ("@option_content2", bytText[b], typeof(byte[]).FullName), ("@answer", EnabledOne[b], typeof(string).FullName));
+                                                        }
+                                                        ClassMethod.lemonUpdateSubjectChildInfo(addText.ToString(), SubjectChildInfoGuid);
                                                     }
-                                                    $@"update SubjectChildInfo set subject_child_analysis2=@subject_child_analysis2 where guid = @guid".ENQ(("@subject_child_analysis2", addText, typeof(byte[]).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName));
+                                                    else
+                                                    {
+                                                        MessageBox.Show("新增失败");
+                                                        return;
+                                                    }
                                                 }
                                                 if (txttype.Text == "判断题")
                                                 {
@@ -761,7 +775,7 @@ namespace QA.winfrom
                                                     var addText = SqlHelper.RtxToBytes(addTexts);
                                                     $@"insert into SubjectChildInfo(guid,subject_guid,subject_child_no,subject_child_type,subject_child_answer)values(@guid,@subject_guid,@subject_child_no,@subject_child_type,@subject_child_answer)".ENQ(("@subject_child_answer", YesorNo, typeof(string).FullName), ("@subject_child_type", 2, typeof(int).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName), ("@subject_guid", ExamInfoGuid, typeof(string).FullName), ("@subject_child_no", i, typeof(int).FullName));
 
-                                                    $@"update SubjectChildInfo set subject_child_analysis2=@subject_child_analysis2 where guid = @guid".ENQ(("@subject_child_analysis2", addText, typeof(byte[]).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName));
+                                                    ClassMethod.lemonUpdateSubjectChildInfo(addText.ToString(), SubjectChildInfoGuid);
                                                 }
                                                 if (txttype.Text == "问答题")
                                                 {
@@ -775,7 +789,7 @@ namespace QA.winfrom
 
                                                     $@"insert into SubjectChildInfo(guid,subject_guid,subject_child_no,subject_child_type,subject_child_answer2)values(@guid,@subject_guid,@subject_child_no,@subject_child_type,@subject_child_answer)".ENQ(("@subject_child_answer", EditText, typeof(byte[]).FullName), ("@subject_child_type", 3, typeof(int).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName), ("@subject_guid", ExamInfoGuid, typeof(string).FullName), ("@subject_child_no", i, typeof(int).FullName));
 
-                                                    $@"update SubjectChildInfo set subject_child_analysis2=@subject_child_analysis2 where guid = @guid".ENQ(("@subject_child_analysis2", addText, typeof(byte[]).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName));
+                                                    ClassMethod.lemonUpdateSubjectChildInfo(addText.ToString(), SubjectChildInfoGuid);
                                                 }
                                             }
                                         }

@@ -265,7 +265,6 @@ namespace WebServer.Controllers
             catch { }
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
-
         }
 
         /// <summary>
@@ -281,6 +280,59 @@ namespace WebServer.Controllers
             try
             {
                 var strSql = $@"insert into ExamSubjectInfo (subject_content,subject_content2,exam_guid,subject_no,guid) values (@subject_content,@subject_content2,@exam_guid,@subject_no,@guid)";
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+                var Params = (dynamic)ParamsJson.Params;
+                List<(string, object, string)> SqlParams = new List<(string, object, string)>();
+                if (Params != null)
+                {
+                    foreach (var item in Params)
+                    {
+                        var Item1 = Convert.ToString(item.Item1);
+                        var Item3 = Convert.ToString(item.Item3);
+                        object Item2 = null;
+                        if (string.IsNullOrEmpty(Item3) == true)
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+                        else if (Item3 == typeof(byte[]).FullName)
+                        {
+                            Item2 = (byte[])item.Item2;
+                        }
+                        else
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+
+                        SqlParams.Add((Item1, Item2, Item3));
+                    }
+                }
+
+                SqlHelper.ExecuteNonQuery(strSql, SqlParams);
+
+                Result = true;
+            }
+            catch
+            {
+                Result = false;
+            }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+
+        /// <summary>
+        /// 新增小题
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult InsertSubjectChildInfo([FromBody] JsonElement Parameters)
+        {
+            bool Result = false;
+
+            try
+            {
+                var strSql = $@"insert into SubjectChildInfo(guid,subject_guid,subject_child_no,subject_child_type)values(@guid,@subject_guid,@subject_child_no,@subject_child_type)";
                 var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
 
                 var Params = (dynamic)ParamsJson.Params;
@@ -483,6 +535,28 @@ namespace WebServer.Controllers
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
 
+        }
+
+        /// <summary>
+        /// 修改答案GUID
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public void updateSubjectChildInfo([FromBody] JsonElement Parameters)
+        {
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var startTimeandEndTime = ParamsJson.startTimeandEndTime;
+                var subject_child_analysis2 = ParamsJson.subject_child_analysis2;
+                var guid = ParamsJson.guid;
+                SqlHelper.ExecuteNonQuery($@"update SubjectChildInfo set subject_child_analysis2='{subject_child_analysis2}' where guid = '{guid}'");
+            }
+            catch
+            {
+
+            }
         }
         #endregion
 
@@ -706,7 +780,6 @@ namespace WebServer.Controllers
 
         }
 
-
         /// <summary>
         /// 根据GUID返回历年考试信息ExamInfo
         /// </summary>
@@ -723,6 +796,29 @@ namespace WebServer.Controllers
                 var exam_guid = ParamsJson.exam_guid;
                 var subject_content = ParamsJson.subject_content;
                 var strSql = $@"select * from ExamSubjectInfo where exam_guid = '{exam_guid}' and subject_content LIKE '{subject_content}'";
+                Result = SqlHelper.ExecuteQuery(strSql);
+            }
+            catch { }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+
+        }
+
+        /// <summary>
+        /// 根据exam_type_guid返回信息,但是要带上一行删除按钮
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult SelectExamInfoDelete([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = null;
+
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var exam_type_guid = ParamsJson.exam_type_guid;
+                var strSql = $@"select*,sc='删除' from ExamInfo where exam_type_guid = '{exam_type_guid}'";
                 Result = SqlHelper.ExecuteQuery(strSql);
             }
             catch { }

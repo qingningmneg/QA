@@ -40,19 +40,13 @@ namespace QA.file
         /// get 测试方法
         /// </summary>
         /// <returns></returns>
-        public static Dictionary<string, object> getningmengText()
+        public static void getningmengText()
         {
-            Dictionary<string, object> Result = new Dictionary<string, object>();
-
             WebClient webClient = new WebClient();
             webClient.Headers["Accept"] = "application/json";
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
-            var ResultsJson = webClient.DownloadString($@"{ServerUrl}/getningmengText");
-
-            Result = JsonConvert.DeserializeObject<Dictionary<string, object>>(ResultsJson);
-
-            return Result;
+            webClient.DownloadString($@"{ServerUrl}/getningmengText");
         }
 
         #region 新增
@@ -112,13 +106,32 @@ namespace QA.file
 
             return Result;
         }
+
+        /// <summary>
+        /// 新增小题
+        /// </summary>
+        /// <param name="Params"></param>
+        /// <returns></returns>
+        public static bool lemonInsertSubjectChildInfo(params (string, object, string)[] Params)
+        {
+            bool Result = false;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/Register", JsonConvert.SerializeObject(new { Params = Params }));
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
+
+            return Result;
+        }
         #endregion
 
         #region 删除
         /// <summary>
         /// 删除年份
         /// </summary>
-        /// <param name="year_guid"></param>
+        /// <param name="year_guid">年份的guid</param>
         /// <returns></returns>
         public static bool lemonDeleteExamInfo(string year_guid)
         {
@@ -173,6 +186,21 @@ namespace QA.file
 
             Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
             return Result;
+        }
+
+        /// <summary>
+        /// 修改答案GUID
+        /// </summary>
+        /// <param name="startTimeandEndTime"></param>
+        /// <param name="year_guid"></param>
+        /// <returns></returns>
+        public static void lemonUpdateSubjectChildInfo(string subject_child_analysis2, string guid)
+        {
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            webClient.UploadString($@"{ServerUrl}/UpdateSubjectChildInfo", JsonConvert.SerializeObject(new { subject_child_analysis2 = subject_child_analysis2, guid = guid }));
         }
         #endregion
 
@@ -356,7 +384,8 @@ namespace QA.file
 
             return Result;
         }
-        public static DataTable lemonSelectExamSubjectInfoLIKE(string exam_guid,string subject_content)
+
+        public static DataTable lemonSelectExamSubjectInfoLIKE(string exam_guid, string subject_content)
         {
             DataTable Result = new DataTable();
 
@@ -365,6 +394,20 @@ namespace QA.file
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
             var ResultsJson = webClient.UploadString($@"{ServerUrl}/SelectExamSubjectInfoExam_guid", JsonConvert.SerializeObject(new { exam_guid = exam_guid, subject_content = subject_content }));
+            Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
+
+            return Result;
+        }
+
+        public static DataTable lemonSelectExamInfoDelete(string exam_type_guid)
+        {
+            DataTable Result = new DataTable();
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/SelectExamInfoDelete", JsonConvert.SerializeObject(new { exam_type_guid = exam_type_guid }));
             Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
 
             return Result;
