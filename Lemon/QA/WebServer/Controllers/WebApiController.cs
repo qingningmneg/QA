@@ -321,18 +321,177 @@ namespace WebServer.Controllers
         }
 
         /// <summary>
-        /// 新增小题
+        /// 新增选择小题
         /// </summary>
         /// <param name="Parameters"></param>
         /// <returns></returns>
         [HttpPost]
-        public ActionResult InsertSubjectChildInfo([FromBody] JsonElement Parameters)
+        public ActionResult InsertChooseSubjectChildInfo([FromBody] JsonElement Parameters)
         {
             bool Result = false;
 
             try
             {
                 var strSql = $@"insert into SubjectChildInfo(guid,subject_guid,subject_child_no,subject_child_type)values(@guid,@subject_guid,@subject_child_no,@subject_child_type)";
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+                var Params = (dynamic)ParamsJson.Params;
+                List<(string, object, string)> SqlParams = new List<(string, object, string)>();
+                if (Params != null)
+                {
+                    foreach (var item in Params)
+                    {
+                        var Item1 = Convert.ToString(item.Item1);
+                        var Item3 = Convert.ToString(item.Item3);
+                        object Item2 = null;
+                        if (string.IsNullOrEmpty(Item3) == true)
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+                        else if (Item3 == typeof(byte[]).FullName)
+                        {
+                            Item2 = (byte[])item.Item2;
+                        }
+                        else
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+
+                        SqlParams.Add((Item1, Item2, Item3));
+                    }
+                }
+
+                SqlHelper.ExecuteNonQuery(strSql, SqlParams);
+
+                Result = true;
+            }
+            catch
+            {
+                Result = false;
+            }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+
+        /// <summary>
+        /// 新增子题目选项(单选多选)
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult InsertSubjectChildOptionInfo([FromBody] JsonElement Parameters)
+        {
+            bool Result = false;
+
+            try
+            {
+                var strSql = $@"insert into SubjectChildOptionInfo(guid,subject_child_guid,option_no,option_content,option_content2,answer)values(@guid,@subject_child_guid,@option_no,@option_content,@option_content2,@answer)";
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+                var Params = (dynamic)ParamsJson.Params;
+                List<(string, object, string)> SqlParams = new List<(string, object, string)>();
+                if (Params != null)
+                {
+                    foreach (var item in Params)
+                    {
+                        var Item1 = Convert.ToString(item.Item1);
+                        var Item3 = Convert.ToString(item.Item3);
+                        object Item2 = null;
+                        if (string.IsNullOrEmpty(Item3) == true)
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+                        else if (Item3 == typeof(byte[]).FullName)
+                        {
+                            Item2 = (byte[])item.Item2;
+                        }
+                        else
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+
+                        SqlParams.Add((Item1, Item2, Item3));
+                    }
+                }
+
+                SqlHelper.ExecuteNonQuery(strSql, SqlParams);
+
+                Result = true;
+            }
+            catch
+            {
+                Result = false;
+            }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+
+        /// <summary>
+        /// 新增小题(判断)
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult InsertJudgeSubjectChildInfo([FromBody] JsonElement Parameters)
+        {
+            bool Result = false;
+
+            try
+            {
+                var strSql = $@"insert into SubjectChildInfo(guid,subject_guid,subject_child_no,subject_child_type,subject_child_answer)values(@guid,@subject_guid,@subject_child_no,@subject_child_type,@subject_child_answer)";
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+                var Params = (dynamic)ParamsJson.Params;
+                List<(string, object, string)> SqlParams = new List<(string, object, string)>();
+                if (Params != null)
+                {
+                    foreach (var item in Params)
+                    {
+                        var Item1 = Convert.ToString(item.Item1);
+                        var Item3 = Convert.ToString(item.Item3);
+                        object Item2 = null;
+                        if (string.IsNullOrEmpty(Item3) == true)
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+                        else if (Item3 == typeof(byte[]).FullName)
+                        {
+                            Item2 = (byte[])item.Item2;
+                        }
+                        else
+                        {
+                            Item2 = Convert.ToString(item.Item2);
+                        }
+
+                        SqlParams.Add((Item1, Item2, Item3));
+                    }
+                }
+
+                SqlHelper.ExecuteNonQuery(strSql, SqlParams);
+
+                Result = true;
+            }
+            catch
+            {
+                Result = false;
+            }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+
+        /// <summary>
+        /// 新增小题(问答)
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult InsertQAASubjectChildInfo([FromBody] JsonElement Parameters)
+        {
+            bool Result = false;
+
+            try
+            {
+                var strSql = $@"insert into SubjectChildInfo(guid,subject_guid,subject_child_no,subject_child_type,subject_child_answer2)values(@guid,@subject_guid,@subject_child_no,@subject_child_type,@subject_child_answer)";
                 var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
 
                 var Params = (dynamic)ParamsJson.Params;

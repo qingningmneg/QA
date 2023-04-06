@@ -101,7 +101,7 @@ namespace QA.file
             webClient.Headers["Accept"] = "application/json";
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
-            var ResultsJson = webClient.UploadString($@"{ServerUrl}/Register", JsonConvert.SerializeObject(new { Params = Params }));
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/InsertExamSubjectInfo", JsonConvert.SerializeObject(new { Params = Params }));
             Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
 
             return Result;
@@ -112,7 +112,7 @@ namespace QA.file
         /// </summary>
         /// <param name="Params"></param>
         /// <returns></returns>
-        public static bool lemonInsertSubjectChildInfo(params (string, object, string)[] Params)
+        public static bool lemonInsertChooseSubjectChildInfo(params (string, object, string)[] Params)
         {
             bool Result = false;
 
@@ -120,11 +120,69 @@ namespace QA.file
             webClient.Headers["Accept"] = "application/json";
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
-            var ResultsJson = webClient.UploadString($@"{ServerUrl}/Register", JsonConvert.SerializeObject(new { Params = Params }));
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/InsertChooseSubjectChildInfo", JsonConvert.SerializeObject(new { Params = Params }));
             Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
 
             return Result;
         }
+
+        /// <summary>
+        /// 新增子题目选项
+        /// </summary>
+        /// <param name="Params"></param>
+        /// <returns></returns>
+        public static bool lemonInsertSubjectChildOptionInfo(params (string, object, string)[] Params)
+        {
+            bool Result = false;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/InsertSubjectChildOptionInfo", JsonConvert.SerializeObject(new { Params = Params }));
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
+
+            return Result;
+        }
+
+        /// <summary>
+        /// 新增小题(判断)
+        /// </summary>
+        /// <param name="Params"></param>
+        /// <returns></returns>
+        public static bool lemonInsertJudgeSubjectChildInfo(params (string, object, string)[] Params)
+        {
+            bool Result = false;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/InsertJudgeSubjectChildInfo", JsonConvert.SerializeObject(new { Params = Params }));
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
+
+            return Result;
+        }
+
+        /// <summary>
+        /// 新增小题(问答)
+        /// </summary>
+        /// <param name="Params"></param>
+        /// <returns></returns>
+        public static bool lemonInsertQAASubjectChildInfo(params (string, object, string)[] Params)
+        {
+            bool Result = false;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/InsertQAASubjectChildInfo", JsonConvert.SerializeObject(new { Params = Params }));
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
+
+            return Result;
+        }
+        
         #endregion
 
         #region 删除
