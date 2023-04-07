@@ -144,6 +144,7 @@ namespace QA.winfrom
             catch
             {
                 MessageBox.Show("您的操作过快请稍后再试");
+                return;
             }
         }
 

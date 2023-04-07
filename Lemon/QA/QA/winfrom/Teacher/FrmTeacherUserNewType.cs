@@ -22,6 +22,7 @@ namespace QA.winfrom
         /// 科目名称
         /// </summary>
         private string exam_type;
+
         /// <summary>
         /// 科目guid
         /// </summary>
@@ -60,12 +61,20 @@ namespace QA.winfrom
         {
             if (exam_type != null)
             {
-                var dt_ExamTypeInfo = $@"select * from ExamTypeInfo where  guid = @guid".EQ(("@guid", this.guid));//类型
+
+                var dt_ExamTypeInfo = ClassMethod.lemonSelectExamTypeInfoGUID(this.guid);
                 if (dt_ExamTypeInfo != null && dt_ExamTypeInfo.Rows.Count > 0)
                 {
-                    $@"update ExamTypeInfo set exam_type=@exam_type where guid = @guid".ENQ(("@guid", this.guid), ("@exam_type", txtusertype.Text));
-                    MessageBox.Show("编辑成功");
-                    this.Close();
+                    if (ClassMethod.lemonUpdateExamTypeInfo(txtusertype.Text, this.guid))
+                    {
+                        MessageBox.Show("编辑成功");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("服务端返回错误信息，报错方法 UpdateExamTypeInfo");
+                        return;
+                    }
                 }
                 else
                 {
@@ -83,9 +92,18 @@ namespace QA.winfrom
                 }
                 else
                 {
-                    $@"insert into ExamTypeInfo(exam_type)values(@exam_type)".ENQ(("@exam_type", txtusertype.Text));
-                    MessageBox.Show("添加成功");
-                    this.Close();
+                    string guid = Guid.NewGuid().ToString();//大题guid
+
+                    if (ClassMethod.lemonInsertExamTypeInfo(guid, txtusertype.Text))
+                    {
+                        MessageBox.Show("添加成功");
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("服务端返回错误信息,错误方法SelectExamTypeInfoExamType");
+                        return;
+                    }
                 }
             }
         }

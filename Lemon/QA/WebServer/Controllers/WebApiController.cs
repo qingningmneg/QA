@@ -531,6 +531,30 @@ namespace WebServer.Controllers
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
+
+        /// <summary>
+        /// 新增考试科目
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult InsertExamTypeInfo([FromBody] JsonElement Parameters)
+        {
+            bool Result = false;
+
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var guid = ParamsJson.guid;
+                var exam_type = ParamsJson.exam_type;
+                string strSql = $@"insert into ExamTypeInfo (guid,exam_type) values ('{guid}','{exam_type}')";
+                SqlHelper.ExecuteNonQuery(strSql);
+                Result = true;
+            }
+            catch { }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
         #endregion
 
         #region 删除
@@ -716,6 +740,31 @@ namespace WebServer.Controllers
             {
 
             }
+        }
+
+        /// <summary>
+        /// 根据GUID修改考试信息的exam_type字段
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult updateExamTypeInfo([FromBody] JsonElement Parameters)
+        {
+            bool Result = false;
+
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var startTimeandEndTime = ParamsJson.startTimeandEndTime;
+                var exam_type = ParamsJson.exam_type;
+                var guid = ParamsJson.guid;
+                SqlHelper.ExecuteNonQuery($@"update ExamTypeInfo set exam_type='{exam_type}' where guid = '{guid}'");
+
+                Result = true;
+            }
+            catch { Result = false; }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
         #endregion
 
@@ -983,7 +1032,28 @@ namespace WebServer.Controllers
             catch { }
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
 
+        /// <summary>
+        /// 根据科目名称的GUID查询字段
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult SelectExamTypeInfoGUID([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = null;
+
+            try
+            {
+                var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+                var guid = ParamsJson.guid;
+                var strSql = $@"select * from ExamTypeInfo where guid = '{guid}'";
+                Result = SqlHelper.ExecuteQuery(strSql);
+            }
+            catch { }
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
         #endregion
     }

@@ -26,6 +26,7 @@ namespace QA
             //MaximizeBox = false;
             StartPosition = FormStartPosition.CenterScreen;//常用代码
         }
+
         #region 窗体自适应缩放
         private Size m_szInit;//初始窗体大小
         private Dictionary<Control, Rectangle> m_dicSize
@@ -116,9 +117,6 @@ namespace QA
             var dt = SqlHelper.EQ("select b.* from ExamInfo a join ExamSubjectInfo b on a.guid = b.exam_guid where a.exam_type_guid =@guid", ("@guid", guid));
             if (dt != null && dt.Rows.Count > 0)
             {
-
-
-
                 var texts = "科目：" + this.text;
                 var pattern = (sender as Button).Text;
                 if (guid != "")

@@ -293,8 +293,6 @@ namespace QA.winfrom
         {
             DataTable dt = new DataTable();
 
-
-
             return dt;
         }
     }

@@ -17,6 +17,11 @@ namespace QA.file
     {
         public static string ServerUrl = "http://127.0.0.1:18800/api/webapi";
 
+        //客户端其他写法 $@"select * from 表名 where guid = @guid".EQ(("@guid", this.guid));//查询
+        //客户端其他写法 $@"delete 表名 where guid = @guid".ENQ(("@guid", this.guid));
+
+        //具体可传类型看SqlHelper,能传的东西很多
+
         /// <summary>
         /// post 测试方法
         /// </summary>
@@ -49,6 +54,7 @@ namespace QA.file
             webClient.DownloadString($@"{ServerUrl}/getningmengText");
         }
 
+        #region 教师端
         #region 新增
         /// <summary>
         /// post 注册
@@ -182,7 +188,25 @@ namespace QA.file
 
             return Result;
         }
-        
+
+        /// <summary>
+        /// 新增考试科目
+        /// </summary>
+        /// <param name="Params"></param>
+        /// <returns></returns>
+        public static bool lemonInsertExamTypeInfo(string guid, string exam_type)
+        {
+            bool Result = false;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/InsertExamTypeInfo", JsonConvert.SerializeObject(new { guid = guid, exam_type = exam_type }));
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
+
+            return Result;
+        }
         #endregion
 
         #region 删除
@@ -260,6 +284,21 @@ namespace QA.file
             webClient.Encoding = Encoding.UTF8;
             webClient.UploadString($@"{ServerUrl}/UpdateSubjectChildInfo", JsonConvert.SerializeObject(new { subject_child_analysis2 = subject_child_analysis2, guid = guid }));
         }
+
+        public static bool lemonUpdateExamTypeInfo(string exam_type, string guid)
+        {
+            bool Result = false;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/updateExamTypeInfo", JsonConvert.SerializeObject(new { exam_type = exam_type, guid = guid }));
+
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
+            return Result;
+        }
+
         #endregion
 
         #region 查询
@@ -470,6 +509,21 @@ namespace QA.file
 
             return Result;
         }
+
+        public static DataTable lemonSelectExamTypeInfoGUID(string guid)
+        {
+            DataTable Result = new DataTable();
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/SelectExamTypeInfoGUID", JsonConvert.SerializeObject(new { guid = guid }));
+            Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
+
+            return Result;
+        }
         #endregion
+        #endregion 
     }
 }
