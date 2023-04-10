@@ -792,6 +792,28 @@ namespace WebServer.Controllers
         }
 
         /// <summary>
+        /// 登录方法
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns> 
+        [HttpPost]
+        public ActionResult selelctExamInfo([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = new DataTable();
+
+            var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+            var guid = ParamsJson.guid;
+
+            string strSql = $@"select b.* from ExamInfo a join ExamSubjectInfo b on a.guid = b.exam_guid where a.exam_type_guid = '{guid}'";
+
+            Result = SqlHelper.ExecuteQuery(strSql);
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+        
+
+        /// <summary>
         /// 判断卡号是否存在
         /// </summary>
         /// <param name="Parameters"></param>
@@ -1056,5 +1078,7 @@ namespace WebServer.Controllers
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
         #endregion
+
+
     }
 }

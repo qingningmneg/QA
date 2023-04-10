@@ -1,6 +1,9 @@
 ﻿using DevExpress.Printing.Core.PdfExport.Metafile;
 using DevExpress.XtraEditors;
 using Kuade.WinControls.Student;
+
+using QA.file;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -114,7 +117,7 @@ namespace QA
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
-            var dt = SqlHelper.EQ("select b.* from ExamInfo a join ExamSubjectInfo b on a.guid = b.exam_guid where a.exam_type_guid =@guid", ("@guid", guid));
+            var dt = ClassMethod.lemonselelctExamInfo(guid);
             if (dt != null && dt.Rows.Count > 0)
             {
                 var texts = "科目：" + this.text;

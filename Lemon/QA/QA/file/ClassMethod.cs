@@ -55,6 +55,7 @@ namespace QA.file
         }
 
         #region 教师端
+
         #region 新增
         /// <summary>
         /// post 注册
@@ -524,6 +525,42 @@ namespace QA.file
             return Result;
         }
         #endregion
-        #endregion 
+
+        #endregion
+
+        #region 学生组
+        /// <summary>
+        /// post 登录
+        /// </summary>
+        /// <param name="user_no">用户名</param>
+        /// <param name="user_pwd">密码</param>
+        /// <returns></returns>
+        public static DataTable lemonselelctExamInfo(string guid)
+        {
+            DataTable Result = null;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/selelctExamInfo", JsonConvert.SerializeObject(new { guid = guid }));
+
+            Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
+            return Result;
+        }
+        #region 新增
+
+        #endregion
+
+        #region 删除
+        #endregion
+
+        #region 编辑
+        #endregion
+
+        #region 查询
+        #endregion
+
+        #endregion
     }
 }
