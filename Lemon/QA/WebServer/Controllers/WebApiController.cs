@@ -188,6 +188,8 @@ namespace WebServer.Controllers
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
 
+        #region 教师端
+
         #region 新增
         /// <summary>
         /// 注册
@@ -721,25 +723,27 @@ namespace WebServer.Controllers
         }
 
         /// <summary>
-        /// 修改答案GUID
+        /// 修改考试类型
         /// </summary>
         /// <param name="Parameters"></param>
         /// <returns></returns>
-        [HttpGet]
-        public void updateSubjectChildInfo([FromBody] JsonElement Parameters)
+        [HttpPost]
+        public ActionResult updateSubjectChildInfo([FromBody] JsonElement Parameters)
         {
+            bool Result = false;
+
             try
             {
                 var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
                 var startTimeandEndTime = ParamsJson.startTimeandEndTime;
-                var subject_child_analysis2 = ParamsJson.subject_child_analysis2;
+                byte[] subject_child_analysis2 = ParamsJson.subject_child_analysis2;
                 var guid = ParamsJson.guid;
                 SqlHelper.ExecuteNonQuery($@"update SubjectChildInfo set subject_child_analysis2='{subject_child_analysis2}' where guid = '{guid}'");
+                Result = true;
             }
-            catch
-            {
+            catch { }
 
-            }
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
 
         /// <summary>
@@ -790,28 +794,6 @@ namespace WebServer.Controllers
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
-
-        /// <summary>
-        /// 登录方法
-        /// </summary>
-        /// <param name="Parameters"></param>
-        /// <returns></returns> 
-        [HttpPost]
-        public ActionResult selelctExamInfo([FromBody] JsonElement Parameters)
-        {
-            DataTable Result = new DataTable();
-
-            var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
-
-            var guid = ParamsJson.guid;
-
-            string strSql = $@"select b.* from ExamInfo a join ExamSubjectInfo b on a.guid = b.exam_guid where a.exam_type_guid = '{guid}'";
-
-            Result = SqlHelper.ExecuteQuery(strSql);
-
-            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
-        }
-        
 
         /// <summary>
         /// 判断卡号是否存在
@@ -1079,6 +1061,44 @@ namespace WebServer.Controllers
         }
         #endregion
 
+        #endregion
 
+        #region 学生端
+
+        #region 新增
+
+        #endregion
+
+        #region 删除
+        #endregion
+
+        #region 修改
+        #endregion
+
+        #region 查询
+
+        /// <summary>
+        /// 登录方法
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns> 
+        [HttpPost]
+        public ActionResult selelctExamInfoGUID([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = new DataTable();
+
+            var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+            var guid = ParamsJson.guid;
+
+            string strSql = $@"select b.* from ExamInfo a join ExamSubjectInfo b on a.guid = b.exam_guid where a.exam_type_guid = '{guid}'";
+
+            Result = SqlHelper.ExecuteQuery(strSql);
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+        #endregion
+
+        #endregion
     }
 }

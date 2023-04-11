@@ -10,6 +10,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using static DevExpress.Utils.Filtering.ExcelFilterOptions;
+using QA.file;
 
 namespace QA
 {
@@ -136,7 +137,7 @@ namespace QA
             RandomNextQuestion();
             lblCount.Text = intCount.ToString() + "/" + AllanswerCount.ToString();
             #endregion
-            
+
         }
 
         /// <summary>
@@ -215,7 +216,7 @@ namespace QA
             data.Columns.Add("subject_content2");
             if (pattern == "随机考题")
             {
-                var dt = SqlHelper.EQ("select b.* from ExamInfo a join ExamSubjectInfo b on a.guid = b.exam_guid where a.exam_type_guid =@guid", ("@guid", guid));
+                var dt = ClassMethod.lemonselelctExamInfoGUID(guid);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     dataTable = dt;
@@ -228,7 +229,7 @@ namespace QA
             }
             if (pattern == "选择考题")
             {
-                var dt = SqlHelper.EQ("select * from  ExamSubjectInfo  where exam_guid =@guid", ("@guid", guid));
+                var dt = ClassMethod.lemonSelectExamSubjectInfoGUID(guid);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     dataTable = dt;
@@ -359,6 +360,7 @@ namespace QA
         /// 正确答案数量
         /// </summary>
         int answerCount = 0;
+
         /// <summary>
         /// 添加答案
         /// </summary>

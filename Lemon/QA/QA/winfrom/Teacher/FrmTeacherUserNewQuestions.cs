@@ -132,7 +132,7 @@ namespace QA.winfrom
                                         ClassMethod.lemonInsertSubjectChildOptionInfo(("@guid", SubjectChildOptionInfoGuid, typeof(string).FullName), ("@subject_child_guid", SubjectChildInfoGuid, typeof(string).FullName), ("@option_no", Eng[b], typeof(string).FullName), ("@option_content", strText[b], typeof(string).FullName), ("@option_content2", btyText[b], typeof(byte[]).FullName), ("@answer", Enabled[b], typeof(string).FullName));
                                     }
                                     var addText = SqlHelper.RtxToBytes(addTexts);
-                                    ClassMethod.lemonUpdateSubjectChildInfo(addText.ToString(), SubjectChildInfoGuid);
+                                    ClassMethod.lemonUpdateSubjectChildInfo(addText, SubjectChildInfoGuid);
                                 }
                                 else
                                 {
@@ -159,7 +159,7 @@ namespace QA.winfrom
                                         string SubjectChildOptionInfoGuid = Guid.NewGuid().ToString();//答案guid SubjectChildInfoGuid
                                         ClassMethod.lemonInsertSubjectChildOptionInfo(("@guid", SubjectChildOptionInfoGuid, typeof(string).FullName), ("@subject_child_guid", SubjectChildInfoGuid, typeof(string).FullName), ("@option_no", EngOne[b], typeof(string).FullName), ("@option_content", strTexts[b], typeof(string).FullName), ("@option_content2", bytText[b], typeof(byte[]).FullName), ("@answer", EnabledOne[b], typeof(string).FullName));
                                     }
-                                    ClassMethod.lemonUpdateSubjectChildInfo(addText.ToString(), SubjectChildInfoGuid);
+                                    ClassMethod.lemonUpdateSubjectChildInfo(addText, SubjectChildInfoGuid);
                                 }
                                 else
                                 {
@@ -176,7 +176,7 @@ namespace QA.winfrom
                                 var addText = SqlHelper.RtxToBytes(addTexts);
                                 ClassMethod.lemonInsertJudgeSubjectChildInfo(("@subject_child_answer", YesorNo, typeof(string).FullName), ("@subject_child_type", 2, typeof(int).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName), ("@subject_guid", ExamInfoGuid, typeof(string).FullName), ("@subject_child_no", i, typeof(int).FullName));
 
-                                ClassMethod.lemonUpdateSubjectChildInfo(addText.ToString(), SubjectChildInfoGuid);
+                                ClassMethod.lemonUpdateSubjectChildInfo(addText, SubjectChildInfoGuid);
                             }
                             if (txttype.Text == "问答题")
                             {
@@ -190,7 +190,7 @@ namespace QA.winfrom
 
                                 ClassMethod.lemonInsertQAASubjectChildInfo(("@subject_child_answer", EditText, typeof(byte[]).FullName), ("@subject_child_type", 3, typeof(int).FullName), ("@guid", SubjectChildInfoGuid, typeof(string).FullName), ("@subject_guid", ExamInfoGuid, typeof(string).FullName), ("@subject_child_no", i, typeof(int).FullName));
 
-                                ClassMethod.lemonUpdateSubjectChildInfo(addText.ToString(), SubjectChildInfoGuid);
+                                ClassMethod.lemonUpdateSubjectChildInfo(addText, SubjectChildInfoGuid);
                             }
                         }
                     }

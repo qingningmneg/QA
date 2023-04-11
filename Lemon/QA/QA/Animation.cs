@@ -105,7 +105,14 @@ namespace QA
                         control.Height = 0;
                         break;
                 }
-                control.Show();
+                try
+                {
+                    control.Show();
+                }
+                catch
+                {
+                    MessageBox.Show("创建句柄出错");
+                }
                 tmrAnim.Start();
             }
         }

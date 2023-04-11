@@ -271,19 +271,18 @@ namespace QA.file
             return Result;
         }
 
-        /// <summary>
-        /// 修改答案GUID
-        /// </summary>
-        /// <param name="startTimeandEndTime"></param>
-        /// <param name="year_guid"></param>
-        /// <returns></returns>
-        public static void lemonUpdateSubjectChildInfo(string subject_child_analysis2, string guid)
+        public static bool lemonUpdateSubjectChildInfo(byte[] subject_child_analysis2, string guid)
         {
+            bool Result = false;
+
             WebClient webClient = new WebClient();
             webClient.Headers["Accept"] = "application/json";
             webClient.Headers["Content-Type"] = "application/json";
             webClient.Encoding = Encoding.UTF8;
-            webClient.UploadString($@"{ServerUrl}/UpdateSubjectChildInfo", JsonConvert.SerializeObject(new { subject_child_analysis2 = subject_child_analysis2, guid = guid }));
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/updateSubjectChildInfo", JsonConvert.SerializeObject(new { subject_child_analysis2 = subject_child_analysis2, guid = guid }));
+
+            Result = JsonConvert.DeserializeObject<bool>(ResultsJson);
+            return Result;
         }
 
         public static bool lemonUpdateExamTypeInfo(string exam_type, string guid)
@@ -529,25 +528,8 @@ namespace QA.file
         #endregion
 
         #region 学生组
-        /// <summary>
-        /// post 登录
-        /// </summary>
-        /// <param name="user_no">用户名</param>
-        /// <param name="user_pwd">密码</param>
-        /// <returns></returns>
-        public static DataTable lemonselelctExamInfo(string guid)
-        {
-            DataTable Result = null;
 
-            WebClient webClient = new WebClient();
-            webClient.Headers["Accept"] = "application/json";
-            webClient.Headers["Content-Type"] = "application/json";
-            webClient.Encoding = Encoding.UTF8;
-            var ResultsJson = webClient.UploadString($@"{ServerUrl}/selelctExamInfo", JsonConvert.SerializeObject(new { guid = guid }));
 
-            Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
-            return Result;
-        }
         #region 新增
 
         #endregion
@@ -559,6 +541,26 @@ namespace QA.file
         #endregion
 
         #region 查询
+        /// <summary>
+        /// post 根据GUID查询 ExamInfo
+        /// </summary>
+        /// <param name="user_no">用户名</param>
+        /// <param name="user_pwd">密码</param>
+        /// <returns></returns>
+        public static DataTable lemonselelctExamInfoGUID(string guid)
+        {
+            DataTable Result = null;
+
+            WebClient webClient = new WebClient();
+            webClient.Headers["Accept"] = "application/json";
+            webClient.Headers["Content-Type"] = "application/json";
+            webClient.Encoding = Encoding.UTF8;
+            var ResultsJson = webClient.UploadString($@"{ServerUrl}/selelctExamInfoGUID", JsonConvert.SerializeObject(new { guid = guid }));
+
+            Result = JsonConvert.DeserializeObject<DataTable>(ResultsJson);
+            return Result;
+        }
+
         #endregion
 
         #endregion

@@ -117,7 +117,7 @@ namespace QA
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
-            var dt = ClassMethod.lemonselelctExamInfo(guid);
+            var dt = ClassMethod.lemonselelctExamInfoGUID(guid);
             if (dt != null && dt.Rows.Count > 0)
             {
                 var texts = "科目：" + this.text;
