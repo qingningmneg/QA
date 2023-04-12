@@ -115,8 +115,6 @@ E:\visual Studio 2022\zhuminghang\QA\WinApp\WinApp\obj\Debug\netstandard2.0\View
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\bin\Debug\netstandard2.0\WinApp.deps.json
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\bin\Debug\netstandard2.0\WinApp.dll
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\bin\Debug\netstandard2.0\WinApp.pdb
-E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\WinApp.csproj.AssemblyReference.cache
-E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\WinApp.GeneratedMSBuildEditorConfig.editorconfig
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
@@ -131,6 +129,8 @@ E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\WinApp.AssemblyI
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\WinApp.csproj.CoreCompileInputs.cache
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\XamlC.stamp
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\WinApp.dll
-E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\refint\WinApp.dll
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\WinApp.pdb
 E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\ref\WinApp.dll
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\WinApp.csproj.AssemblyReference.cache
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\WinApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp\obj\Debug\netstandard2.0\refint\WinApp.dll

@@ -1243,7 +1243,6 @@ E:\githeb\QA\QA\Lemon\QA\WinControls\bin\Debug\de\DevExpress.XtraVerticalGrid.v2
 E:\githeb\QA\QA\Lemon\QA\WinControls\bin\Debug\es\DevExpress.XtraVerticalGrid.v21.1.resources.dll
 E:\githeb\QA\QA\Lemon\QA\WinControls\bin\Debug\ja\DevExpress.XtraVerticalGrid.v21.1.resources.dll
 E:\githeb\QA\QA\Lemon\QA\WinControls\bin\Debug\ru\DevExpress.XtraVerticalGrid.v21.1.resources.dll
-E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\WinControls.csproj.AssemblyReference.cache
 E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\Kuade.WinControls.ExtOption.ExtAddto.resources
 E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\Kuade.WinControls.ExtAnalysis.resources
 E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\Kuade.WinControls.ExtAnswer.resources
@@ -1265,3 +1264,4 @@ E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\WinControls.csproj.CoreCompileInp
 E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\WinControls.csproj.CopyComplete
 E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\WinControls.dll
 E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\WinControls.pdb
+E:\githeb\QA\QA\Lemon\QA\WinControls\obj\Debug\WinControls.csproj.AssemblyReference.cache
