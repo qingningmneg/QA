@@ -2890,3 +2890,8 @@ E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\refint\WebServer.dll
 E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\WebServer.pdb
 E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\WebServer.genruntimeconfig.cache
 E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\ref\WebServer.dll
+E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\staticwebassets\msbuild.WebServer.Microsoft.AspNetCore.StaticWebAssets.props
+E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\staticwebassets\msbuild.build.WebServer.props
+E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.WebServer.props
+E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.WebServer.props
+E:\githeb\QA\QA\Lemon\QA\WebServer\obj\Debug\net6.0\staticwebassets.pack.json

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+btImzYDxeb0hfo4kscIhkYw8YKaGOS+Z28osFfELy/bytORUHmX431repBR2DDjt8Jp+qS8KtAC1J42RiOtRA==",
+  "dgSpecHash": "Dw2cxw2JhNCw9iLL/5/WgD0sy2VZNgPJob44duGCKbI781XqzXl+9c2sRuL9Z6UNzgGVrhMprXu9jP+ZoCSZvQ==",
   "success": true,
   "projectFilePath": "E:\\githeb\\QA\\QA\\Lemon\\QA\\WinApp\\WinApp\\WinApp.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\zxing.net.mobile\\2.4.1\\zxing.net.mobile.2.4.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\zxing.net.mobile.forms\\2.4.1\\zxing.net.mobile.forms.2.4.1.nupkg.sha512"

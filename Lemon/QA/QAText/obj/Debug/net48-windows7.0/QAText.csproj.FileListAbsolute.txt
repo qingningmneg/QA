@@ -215,3 +215,46 @@ E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.cs
 E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CopyComplete
 E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.exe
 E:\visual Studio 2022\zhuminghang\QA\QAText\obj\Debug\net48-windows7.0\QAText.pdb
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\QAText.exe.config
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\QAText.exe
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\QAText.pdb
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Data.Desktop.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Images.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Office.v21.1.Core.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.1.Core.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Pdf.v21.1.Drawing.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.PivotGrid.v21.1.Core.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Printing.v21.1.Core.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v21.1.Core.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.RichEdit.v21.1.Export.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Sparkline.v21.1.Core.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.Utils.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraNavBar.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraWizard.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.BonusSkins.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraGrid.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraBars.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraEditors.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraLayout.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPivotGrid.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraPrinting.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraRichEdit.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraTreeList.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\DevExpress.XtraVerticalGrid.v21.1.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\Newtonsoft.Json.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\System.Data.SqlClient.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\WinControls.dll
+E:\githeb\QA\QA\Lemon\QA\QAText\bin\Debug\net48-windows7.0\WinControls.pdb
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.AssemblyReference.cache
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.SuggestedBindingRedirects.cache
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.winfrom.FormBase.resources
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.winfrom.FrmLogin.resources
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.GenerateResource.cache
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.GeneratedMSBuildEditorConfig.editorconfig
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.AssemblyInfoInputs.cache
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.AssemblyInfo.cs
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CoreCompileInputs.cache
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.csproj.CopyComplete
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.exe
+E:\githeb\QA\QA\Lemon\QA\QAText\obj\Debug\net48-windows7.0\QAText.pdb

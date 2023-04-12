@@ -2,431 +2,402 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.8": {
-      "DevExpress.Data/22.1.4": {
+      "DevExpress.Data/21.1.3": {
         "type": "package",
         "compile": {
-          "lib/net452/DevExpress.Data.v22.1.dll": {
+          "lib/net452/DevExpress.Data.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Data.v22.1.dll": {
+          "lib/net452/DevExpress.Data.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Data.Desktop/22.1.4": {
+      "DevExpress.Data.Desktop/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Data.Desktop.v22.1.dll": {
+          "lib/net452/DevExpress.Data.Desktop.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Data.Desktop.v22.1.dll": {
+          "lib/net452/DevExpress.Data.Desktop.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Drawing/22.1.4": {
+      "DevExpress.Images/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Drawing.v22.1.dll": {}
+          "lib/net452/DevExpress.Images.v21.1.dll": {}
         },
         "runtime": {
-          "lib/net452/DevExpress.Drawing.v22.1.dll": {}
+          "lib/net452/DevExpress.Images.v21.1.dll": {}
         }
       },
-      "DevExpress.Images/22.1.4": {
+      "DevExpress.Office.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Images.v22.1.dll": {}
-        },
-        "runtime": {
-          "lib/net452/DevExpress.Images.v22.1.dll": {}
-        }
-      },
-      "DevExpress.Office.Core/22.1.4": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]"
-        },
-        "compile": {
-          "lib/net452/DevExpress.Office.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Office.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Office.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Office.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Pdf.Core/22.1.4": {
+      "DevExpress.Pdf.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Pdf.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Pdf.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Pdf.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Pdf.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Pdf.Drawing/22.1.4": {
+      "DevExpress.Pdf.Drawing/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Pdf.v22.1.Drawing.dll": {
+          "lib/net452/DevExpress.Pdf.v21.1.Drawing.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Pdf.v22.1.Drawing.dll": {
+          "lib/net452/DevExpress.Pdf.v21.1.Drawing.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.PivotGrid.Core/22.1.4": {
+      "DevExpress.PivotGrid.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.PivotGrid.v22.1.Core.dll": {
+          "lib/net452/DevExpress.PivotGrid.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.PivotGrid.v22.1.Core.dll": {
+          "lib/net452/DevExpress.PivotGrid.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Printing.Core/22.1.4": {
+      "DevExpress.Printing.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]",
-          "DevExpress.Pdf.Drawing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]",
+          "DevExpress.Pdf.Drawing": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Printing.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Printing.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Printing.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Printing.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.RichEdit.Core/22.1.4": {
+      "DevExpress.RichEdit.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Office.Core": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Office.Core": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.RichEdit.v22.1.Core.dll": {
+          "lib/net452/DevExpress.RichEdit.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.RichEdit.v22.1.Core.dll": {
+          "lib/net452/DevExpress.RichEdit.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.RichEdit.Export/22.1.4": {
+      "DevExpress.RichEdit.Export/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Office.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.RichEdit.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Office.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.RichEdit.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.RichEdit.v22.1.Export.dll": {}
+          "lib/net452/DevExpress.RichEdit.v21.1.Export.dll": {}
         },
         "runtime": {
-          "lib/net452/DevExpress.RichEdit.v22.1.Export.dll": {}
+          "lib/net452/DevExpress.RichEdit.v21.1.Export.dll": {}
         }
       },
-      "DevExpress.Sparkline.Core/22.1.4": {
+      "DevExpress.Sparkline.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Sparkline.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Sparkline.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Sparkline.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Sparkline.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Utils/22.1.4": {
+      "DevExpress.Utils/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Utils.v22.1.dll": {
+          "lib/net452/DevExpress.Utils.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Utils.v22.1.dll": {
+          "lib/net452/DevExpress.Utils.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win/22.1.4": {
+      "DevExpress.Win/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.RichEdit.Export": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Grid": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.PivotGrid": "[22.1.4]",
-          "DevExpress.Win.Printing": "[22.1.4]",
-          "DevExpress.Win.TreeList": "[22.1.4]",
-          "DevExpress.Win.VerticalGrid": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.RichEdit.Export": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Grid": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.PivotGrid": "[21.1.3]",
+          "DevExpress.Win.Printing": "[21.1.3]",
+          "DevExpress.Win.TreeList": "[21.1.3]",
+          "DevExpress.Win.VerticalGrid": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraNavBar.v22.1.dll": {
+          "lib/net452/DevExpress.XtraNavBar.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraWizard.v22.1.dll": {
+          "lib/net452/DevExpress.XtraWizard.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraNavBar.v22.1.dll": {
+          "lib/net452/DevExpress.XtraNavBar.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraWizard.v22.1.dll": {
+          "lib/net452/DevExpress.XtraWizard.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.BonusSkins/22.1.4": {
+      "DevExpress.Win.BonusSkins/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Utils": "[22.1.4]"
+          "DevExpress.Utils": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.BonusSkins.v22.1.dll": {}
+          "lib/net452/DevExpress.BonusSkins.v21.1.dll": {}
         },
         "runtime": {
-          "lib/net452/DevExpress.BonusSkins.v22.1.dll": {}
+          "lib/net452/DevExpress.BonusSkins.v21.1.dll": {}
         }
       },
-      "DevExpress.Win.Grid/22.1.4": {
+      "DevExpress.Win.Grid/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.Printing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.Printing": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraGrid.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraGrid.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.Navigation/22.1.4": {
+      "DevExpress.Win.Navigation/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Sparkline.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Sparkline.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraBars.v22.1.dll": {
+          "lib/net452/DevExpress.XtraBars.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraEditors.v22.1.dll": {
+          "lib/net452/DevExpress.XtraEditors.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraLayout.v22.1.dll": {
+          "lib/net452/DevExpress.XtraLayout.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraBars.v22.1.dll": {
+          "lib/net452/DevExpress.XtraBars.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraEditors.v22.1.dll": {
+          "lib/net452/DevExpress.XtraEditors.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraLayout.v22.1.dll": {
+          "lib/net452/DevExpress.XtraLayout.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.PivotGrid/22.1.4": {
+      "DevExpress.Win.PivotGrid/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.PivotGrid.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.PivotGrid.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraPivotGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraPivotGrid.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraPivotGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraPivotGrid.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.Printing/22.1.4": {
+      "DevExpress.Win.Printing/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.RichEdit.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.TreeList": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.RichEdit.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.TreeList": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraPrinting.v22.1.dll": {
+          "lib/net452/DevExpress.XtraPrinting.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraPrinting.v22.1.dll": {
+          "lib/net452/DevExpress.XtraPrinting.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.RichEdit/22.1.4": {
+      "DevExpress.Win.RichEdit/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Images": "[22.1.4]",
-          "DevExpress.Office.Core": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.RichEdit.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Grid": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.Printing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Images": "[21.1.3]",
+          "DevExpress.Office.Core": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.RichEdit.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Grid": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.Printing": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraRichEdit.v22.1.dll": {
+          "lib/net452/DevExpress.XtraRichEdit.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraRichEdit.v22.1.dll": {
+          "lib/net452/DevExpress.XtraRichEdit.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.TreeList/22.1.4": {
+      "DevExpress.Win.TreeList/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraTreeList.v22.1.dll": {
+          "lib/net452/DevExpress.XtraTreeList.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraTreeList.v22.1.dll": {
+          "lib/net452/DevExpress.XtraTreeList.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.VerticalGrid/22.1.4": {
+      "DevExpress.Win.VerticalGrid/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.Printing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.Printing": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraVerticalGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraVerticalGrid.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraVerticalGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraVerticalGrid.v21.1.dll": {
             "related": ".xml"
           }
         }
@@ -508,431 +479,402 @@
       }
     },
     ".NETFramework,Version=v4.8/win7-x86": {
-      "DevExpress.Data/22.1.4": {
+      "DevExpress.Data/21.1.3": {
         "type": "package",
         "compile": {
-          "lib/net452/DevExpress.Data.v22.1.dll": {
+          "lib/net452/DevExpress.Data.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Data.v22.1.dll": {
+          "lib/net452/DevExpress.Data.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Data.Desktop/22.1.4": {
+      "DevExpress.Data.Desktop/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Data.Desktop.v22.1.dll": {
+          "lib/net452/DevExpress.Data.Desktop.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Data.Desktop.v22.1.dll": {
+          "lib/net452/DevExpress.Data.Desktop.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Drawing/22.1.4": {
+      "DevExpress.Images/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Drawing.v22.1.dll": {}
+          "lib/net452/DevExpress.Images.v21.1.dll": {}
         },
         "runtime": {
-          "lib/net452/DevExpress.Drawing.v22.1.dll": {}
+          "lib/net452/DevExpress.Images.v21.1.dll": {}
         }
       },
-      "DevExpress.Images/22.1.4": {
+      "DevExpress.Office.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Images.v22.1.dll": {}
-        },
-        "runtime": {
-          "lib/net452/DevExpress.Images.v22.1.dll": {}
-        }
-      },
-      "DevExpress.Office.Core/22.1.4": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]"
-        },
-        "compile": {
-          "lib/net452/DevExpress.Office.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Office.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Office.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Office.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Pdf.Core/22.1.4": {
+      "DevExpress.Pdf.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Pdf.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Pdf.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Pdf.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Pdf.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Pdf.Drawing/22.1.4": {
+      "DevExpress.Pdf.Drawing/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Pdf.v22.1.Drawing.dll": {
+          "lib/net452/DevExpress.Pdf.v21.1.Drawing.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Pdf.v22.1.Drawing.dll": {
+          "lib/net452/DevExpress.Pdf.v21.1.Drawing.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.PivotGrid.Core/22.1.4": {
+      "DevExpress.PivotGrid.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.PivotGrid.v22.1.Core.dll": {
+          "lib/net452/DevExpress.PivotGrid.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.PivotGrid.v22.1.Core.dll": {
+          "lib/net452/DevExpress.PivotGrid.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Printing.Core/22.1.4": {
+      "DevExpress.Printing.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]",
-          "DevExpress.Pdf.Drawing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]",
+          "DevExpress.Pdf.Drawing": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Printing.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Printing.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Printing.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Printing.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.RichEdit.Core/22.1.4": {
+      "DevExpress.RichEdit.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Office.Core": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Office.Core": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.RichEdit.v22.1.Core.dll": {
+          "lib/net452/DevExpress.RichEdit.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.RichEdit.v22.1.Core.dll": {
+          "lib/net452/DevExpress.RichEdit.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.RichEdit.Export/22.1.4": {
+      "DevExpress.RichEdit.Export/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Office.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.RichEdit.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Office.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.RichEdit.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.RichEdit.v22.1.Export.dll": {}
+          "lib/net452/DevExpress.RichEdit.v21.1.Export.dll": {}
         },
         "runtime": {
-          "lib/net452/DevExpress.RichEdit.v22.1.Export.dll": {}
+          "lib/net452/DevExpress.RichEdit.v21.1.Export.dll": {}
         }
       },
-      "DevExpress.Sparkline.Core/22.1.4": {
+      "DevExpress.Sparkline.Core/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Sparkline.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Sparkline.v21.1.Core.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Sparkline.v22.1.Core.dll": {
+          "lib/net452/DevExpress.Sparkline.v21.1.Core.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Utils/22.1.4": {
+      "DevExpress.Utils/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.Utils.v22.1.dll": {
+          "lib/net452/DevExpress.Utils.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.Utils.v22.1.dll": {
+          "lib/net452/DevExpress.Utils.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win/22.1.4": {
+      "DevExpress.Win/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.RichEdit.Export": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Grid": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.PivotGrid": "[22.1.4]",
-          "DevExpress.Win.Printing": "[22.1.4]",
-          "DevExpress.Win.TreeList": "[22.1.4]",
-          "DevExpress.Win.VerticalGrid": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.RichEdit.Export": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Grid": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.PivotGrid": "[21.1.3]",
+          "DevExpress.Win.Printing": "[21.1.3]",
+          "DevExpress.Win.TreeList": "[21.1.3]",
+          "DevExpress.Win.VerticalGrid": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraNavBar.v22.1.dll": {
+          "lib/net452/DevExpress.XtraNavBar.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraWizard.v22.1.dll": {
+          "lib/net452/DevExpress.XtraWizard.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraNavBar.v22.1.dll": {
+          "lib/net452/DevExpress.XtraNavBar.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraWizard.v22.1.dll": {
+          "lib/net452/DevExpress.XtraWizard.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.BonusSkins/22.1.4": {
+      "DevExpress.Win.BonusSkins/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Utils": "[22.1.4]"
+          "DevExpress.Utils": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.BonusSkins.v22.1.dll": {}
+          "lib/net452/DevExpress.BonusSkins.v21.1.dll": {}
         },
         "runtime": {
-          "lib/net452/DevExpress.BonusSkins.v22.1.dll": {}
+          "lib/net452/DevExpress.BonusSkins.v21.1.dll": {}
         }
       },
-      "DevExpress.Win.Grid/22.1.4": {
+      "DevExpress.Win.Grid/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.Printing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.Printing": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraGrid.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraGrid.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.Navigation/22.1.4": {
+      "DevExpress.Win.Navigation/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Sparkline.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Sparkline.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraBars.v22.1.dll": {
+          "lib/net452/DevExpress.XtraBars.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraEditors.v22.1.dll": {
+          "lib/net452/DevExpress.XtraEditors.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraLayout.v22.1.dll": {
+          "lib/net452/DevExpress.XtraLayout.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraBars.v22.1.dll": {
+          "lib/net452/DevExpress.XtraBars.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraEditors.v22.1.dll": {
+          "lib/net452/DevExpress.XtraEditors.v21.1.dll": {
             "related": ".xml"
           },
-          "lib/net452/DevExpress.XtraLayout.v22.1.dll": {
+          "lib/net452/DevExpress.XtraLayout.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.PivotGrid/22.1.4": {
+      "DevExpress.Win.PivotGrid/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.PivotGrid.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.PivotGrid.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraPivotGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraPivotGrid.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraPivotGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraPivotGrid.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.Printing/22.1.4": {
+      "DevExpress.Win.Printing/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.RichEdit.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.TreeList": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.RichEdit.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.TreeList": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraPrinting.v22.1.dll": {
+          "lib/net452/DevExpress.XtraPrinting.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraPrinting.v22.1.dll": {
+          "lib/net452/DevExpress.XtraPrinting.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.RichEdit/22.1.4": {
+      "DevExpress.Win.RichEdit/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Images": "[22.1.4]",
-          "DevExpress.Office.Core": "[22.1.4]",
-          "DevExpress.Pdf.Core": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.RichEdit.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Grid": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.Printing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Images": "[21.1.3]",
+          "DevExpress.Office.Core": "[21.1.3]",
+          "DevExpress.Pdf.Core": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.RichEdit.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Grid": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.Printing": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraRichEdit.v22.1.dll": {
+          "lib/net452/DevExpress.XtraRichEdit.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraRichEdit.v22.1.dll": {
+          "lib/net452/DevExpress.XtraRichEdit.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.TreeList/22.1.4": {
+      "DevExpress.Win.TreeList/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraTreeList.v22.1.dll": {
+          "lib/net452/DevExpress.XtraTreeList.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraTreeList.v22.1.dll": {
+          "lib/net452/DevExpress.XtraTreeList.v21.1.dll": {
             "related": ".xml"
           }
         }
       },
-      "DevExpress.Win.VerticalGrid/22.1.4": {
+      "DevExpress.Win.VerticalGrid/21.1.3": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[22.1.4]",
-          "DevExpress.Data.Desktop": "[22.1.4]",
-          "DevExpress.Drawing": "[22.1.4]",
-          "DevExpress.Printing.Core": "[22.1.4]",
-          "DevExpress.Utils": "[22.1.4]",
-          "DevExpress.Win.Navigation": "[22.1.4]",
-          "DevExpress.Win.Printing": "[22.1.4]"
+          "DevExpress.Data": "[21.1.3]",
+          "DevExpress.Data.Desktop": "[21.1.3]",
+          "DevExpress.Printing.Core": "[21.1.3]",
+          "DevExpress.Utils": "[21.1.3]",
+          "DevExpress.Win.Navigation": "[21.1.3]",
+          "DevExpress.Win.Printing": "[21.1.3]"
         },
         "compile": {
-          "lib/net452/DevExpress.XtraVerticalGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraVerticalGrid.v21.1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net452/DevExpress.XtraVerticalGrid.v22.1.dll": {
+          "lib/net452/DevExpress.XtraVerticalGrid.v21.1.dll": {
             "related": ".xml"
           }
         }
@@ -1015,339 +957,325 @@
     }
   },
   "libraries": {
-    "DevExpress.Data/22.1.4": {
-      "sha512": "gy8CiFENbFPM1jH/Mwo3soNTNTDKvK6esOu4arVlxJoMpwblS85NnbjWghegmlXhSazMfAjrZWdgMI9vNnRx5g==",
+    "DevExpress.Data/21.1.3": {
+      "sha512": "vRem51W4VI7IqZXFe2wq88Vo6z3Y6u9mOfyI+OFE22OuoIf2qw1PZ2/Uz5t1H3Rjqqt3VzyMWFm7y5loO+bR9A==",
       "type": "package",
-      "path": "devexpress.data/22.1.4",
+      "path": "devexpress.data/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.data.22.1.4.nupkg.sha512",
+        "devexpress.data.21.1.3.nupkg.sha512",
         "devexpress.data.nuspec",
-        "lib/net452/DevExpress.Data.v22.1.dll",
-        "lib/net452/DevExpress.Data.v22.1.xml",
-        "lib/netstandard2.0/DevExpress.Data.v22.1.dll",
-        "lib/netstandard2.0/DevExpress.Data.v22.1.xml"
+        "lib/net452/DevExpress.Data.v21.1.dll",
+        "lib/net452/DevExpress.Data.v21.1.xml",
+        "lib/netstandard2.0/DevExpress.Data.v21.1.dll",
+        "lib/netstandard2.0/DevExpress.Data.v21.1.xml"
       ]
     },
-    "DevExpress.Data.Desktop/22.1.4": {
-      "sha512": "zagFp2QO/PkmebbXRyo7CSEYfosPG572tfONoVGKsqMcUgCR/S7zsTre6TLa9MQZlBmi6j78E4v1sqyLaXitYA==",
+    "DevExpress.Data.Desktop/21.1.3": {
+      "sha512": "e3fuTcic4PGZIID8GKqr3VDQv80d7C/AyQVN3zOL1PnqLVnWPM0kZk4oKL98zhJvAEER9bpHDuOtzQ3YgslY/A==",
       "type": "package",
-      "path": "devexpress.data.desktop/22.1.4",
+      "path": "devexpress.data.desktop/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/netcoreapp3.0/DevExpress.Data.Desktop.props",
-        "devexpress.data.desktop.22.1.4.nupkg.sha512",
+        "devexpress.data.desktop.21.1.3.nupkg.sha512",
         "devexpress.data.desktop.nuspec",
-        "lib/net452/DevExpress.Data.Desktop.v22.1.dll",
-        "lib/net452/DevExpress.Data.Desktop.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.Data.Desktop.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.Data.Desktop.v22.1.xml"
+        "lib/net452/DevExpress.Data.Desktop.v21.1.dll",
+        "lib/net452/DevExpress.Data.Desktop.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.Data.Desktop.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.Data.Desktop.v21.1.xml"
       ]
     },
-    "DevExpress.Drawing/22.1.4": {
-      "sha512": "5P6WGpZTvg9g29pG17/7o29i3RwNXrnDdtValZ7uUU0GNR+VMhJ+Pxpd6FxesPhOUimYET9JLiNrs3YQp7srlw==",
+    "DevExpress.Images/21.1.3": {
+      "sha512": "MkZjg0f5rJsuXOVGkYpdHBA/rd61iXgqaXzwNU45xCemBE3KxzwMw0yfI7uwrE7jezX8qMctfUxqGDTfNT4idQ==",
       "type": "package",
-      "path": "devexpress.drawing/22.1.4",
+      "path": "devexpress.images/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.drawing.22.1.4.nupkg.sha512",
-        "devexpress.drawing.nuspec",
-        "lib/net452/DevExpress.Drawing.v22.1.dll",
-        "lib/netstandard2.0/DevExpress.Drawing.v22.1.dll"
-      ]
-    },
-    "DevExpress.Images/22.1.4": {
-      "sha512": "nr+I5QoyaFZ0zHb/WES2+uLJccf+RNFHVWXhIYOhxHVCv9J54Pw0hW3O5BLfMIj7ch7UwdX1GMppyS+zLBMr9A==",
-      "type": "package",
-      "path": "devexpress.images/22.1.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.images.22.1.4.nupkg.sha512",
+        "devexpress.images.21.1.3.nupkg.sha512",
         "devexpress.images.nuspec",
-        "lib/net452/DevExpress.Images.v22.1.dll",
-        "lib/netstandard2.0/DevExpress.Images.v22.1.dll"
+        "lib/net452/DevExpress.Images.v21.1.dll",
+        "lib/netstandard2.0/DevExpress.Images.v21.1.dll"
       ]
     },
-    "DevExpress.Office.Core/22.1.4": {
-      "sha512": "ma/dhscyUwW5colJ4gMhj/84hFRayuTepp3XDDhYOXkKhabNMmEohJFlvzmR70+M6h0d+N481mdPl68BVTUNKg==",
+    "DevExpress.Office.Core/21.1.3": {
+      "sha512": "OEkbE/KNDyd96//QWDajswCbIJh9h4LoxKd6wQIynFSo6tdoetUvgvB144G33z0kZuUJZPPAUINxftgcQ4GV/Q==",
       "type": "package",
-      "path": "devexpress.office.core/22.1.4",
+      "path": "devexpress.office.core/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.office.core.22.1.4.nupkg.sha512",
+        "devexpress.office.core.21.1.3.nupkg.sha512",
         "devexpress.office.core.nuspec",
-        "lib/net452/DevExpress.Office.v22.1.Core.dll",
-        "lib/net452/DevExpress.Office.v22.1.Core.xml",
-        "lib/netstandard2.0/DevExpress.Office.v22.1.Core.dll",
-        "lib/netstandard2.0/DevExpress.Office.v22.1.Core.xml"
+        "lib/net452/DevExpress.Office.v21.1.Core.dll",
+        "lib/net452/DevExpress.Office.v21.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.Office.v21.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.Office.v21.1.Core.xml"
       ]
     },
-    "DevExpress.Pdf.Core/22.1.4": {
-      "sha512": "AT3/Ui4tp2FmUAwpmxIM6zNozTfzpaxezPL4F9iEIqXQhyGoug3AO4CJ13xhSTsMWffqn0NAxoR/mFAL/3iO3Q==",
+    "DevExpress.Pdf.Core/21.1.3": {
+      "sha512": "pcL8hx4s2spz/4HOp3ghZIrSVhHerzjzG0dVFkB/Si6QOdmjskMw85x5ugs9FvvIyLgnx+5b/A9hC5RZ/n17Iw==",
       "type": "package",
-      "path": "devexpress.pdf.core/22.1.4",
+      "path": "devexpress.pdf.core/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pdf.core.22.1.4.nupkg.sha512",
+        "devexpress.pdf.core.21.1.3.nupkg.sha512",
         "devexpress.pdf.core.nuspec",
-        "lib/net452/DevExpress.Pdf.v22.1.Core.dll",
-        "lib/net452/DevExpress.Pdf.v22.1.Core.xml",
-        "lib/netstandard2.0/DevExpress.Pdf.v22.1.Core.dll",
-        "lib/netstandard2.0/DevExpress.Pdf.v22.1.Core.xml"
+        "lib/net452/DevExpress.Pdf.v21.1.Core.dll",
+        "lib/net452/DevExpress.Pdf.v21.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.Pdf.v21.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.Pdf.v21.1.Core.xml"
       ]
     },
-    "DevExpress.Pdf.Drawing/22.1.4": {
-      "sha512": "9GEi/3/YBVAbLUoEoTXMwWqG1Apdyjj19OgYJuayzWnO5jTllBeisp3R2hCHcfWOzdQ+tevOBCXPCpHWvk8Qfg==",
+    "DevExpress.Pdf.Drawing/21.1.3": {
+      "sha512": "6kjW7s5pJmZ70ljODn4S50bIrzgtirK0LdoZqrrNORg3x4glq8eI+oAuDTSOH2JTMs2ma58YmroTe1YoR9M9+w==",
       "type": "package",
-      "path": "devexpress.pdf.drawing/22.1.4",
+      "path": "devexpress.pdf.drawing/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pdf.drawing.22.1.4.nupkg.sha512",
+        "devexpress.pdf.drawing.21.1.3.nupkg.sha512",
         "devexpress.pdf.drawing.nuspec",
-        "lib/net452/DevExpress.Pdf.v22.1.Drawing.dll",
-        "lib/net452/DevExpress.Pdf.v22.1.Drawing.xml",
-        "lib/netstandard2.0/DevExpress.Pdf.v22.1.Drawing.dll",
-        "lib/netstandard2.0/DevExpress.Pdf.v22.1.Drawing.xml"
+        "lib/net452/DevExpress.Pdf.v21.1.Drawing.dll",
+        "lib/net452/DevExpress.Pdf.v21.1.Drawing.xml",
+        "lib/netstandard2.0/DevExpress.Pdf.v21.1.Drawing.dll",
+        "lib/netstandard2.0/DevExpress.Pdf.v21.1.Drawing.xml"
       ]
     },
-    "DevExpress.PivotGrid.Core/22.1.4": {
-      "sha512": "2JoT3dpeblDrFV5tKXXBJclYEX9+4jUYvhG8a5OqLUDxlM9Sdg/bImOdx8mBOzEQzBmHEwWUcEp89Xjbd1O1dw==",
+    "DevExpress.PivotGrid.Core/21.1.3": {
+      "sha512": "XiP/aqFrihG0Af3fk+9cJzs2WOhmlgYYLh5vfsCe0WeLwjRElENlyC0bofZHNl0HP/qF61QtrgXhO/EOMVLnoQ==",
       "type": "package",
-      "path": "devexpress.pivotgrid.core/22.1.4",
+      "path": "devexpress.pivotgrid.core/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pivotgrid.core.22.1.4.nupkg.sha512",
+        "devexpress.pivotgrid.core.21.1.3.nupkg.sha512",
         "devexpress.pivotgrid.core.nuspec",
-        "lib/net452/DevExpress.PivotGrid.v22.1.Core.dll",
-        "lib/net452/DevExpress.PivotGrid.v22.1.Core.xml",
-        "lib/netstandard2.0/DevExpress.PivotGrid.v22.1.Core.dll",
-        "lib/netstandard2.0/DevExpress.PivotGrid.v22.1.Core.xml"
+        "lib/net452/DevExpress.PivotGrid.v21.1.Core.dll",
+        "lib/net452/DevExpress.PivotGrid.v21.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.PivotGrid.v21.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.PivotGrid.v21.1.Core.xml"
       ]
     },
-    "DevExpress.Printing.Core/22.1.4": {
-      "sha512": "wYMbPPyPUB+g6VgamKY/mfflZWs3YyOCmePHk4sok0Z8vn/VslWhIhq9CA8Axj8FFU8Og3VZiYnaQY3mqQStyw==",
+    "DevExpress.Printing.Core/21.1.3": {
+      "sha512": "Fqgdlu2nYFd1RVm8JbQUzO/4+4w/XpHbzv5PfvDWdB6Q0F6Y1Hy1yZZUqCvbHTSdBvYsaz3FcbpoOJJbmPjusA==",
       "type": "package",
-      "path": "devexpress.printing.core/22.1.4",
+      "path": "devexpress.printing.core/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.printing.core.22.1.4.nupkg.sha512",
+        "devexpress.printing.core.21.1.3.nupkg.sha512",
         "devexpress.printing.core.nuspec",
-        "lib/net452/DevExpress.Printing.v22.1.Core.dll",
-        "lib/net452/DevExpress.Printing.v22.1.Core.xml",
-        "lib/netstandard2.0/DevExpress.Printing.v22.1.Core.dll",
-        "lib/netstandard2.0/DevExpress.Printing.v22.1.Core.xml"
+        "lib/net452/DevExpress.Printing.v21.1.Core.dll",
+        "lib/net452/DevExpress.Printing.v21.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.Printing.v21.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.Printing.v21.1.Core.xml"
       ]
     },
-    "DevExpress.RichEdit.Core/22.1.4": {
-      "sha512": "lydIlmUUbhDVVgYafrHSUOL9AP0G4g4ILlp92gjnGpGQnYUJ9jIDFNBPRxyFDJV6dK8FLT4T2ijbUp9zzt7BSQ==",
+    "DevExpress.RichEdit.Core/21.1.3": {
+      "sha512": "U96uD6KHDRdpvEglFHMGnUTaJDJbWlVicyA4UfE3btI3TLqkJ1Onj5Cat/diFk9IHYcaO+xQqRPYShP65K75yQ==",
       "type": "package",
-      "path": "devexpress.richedit.core/22.1.4",
+      "path": "devexpress.richedit.core/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.richedit.core.22.1.4.nupkg.sha512",
+        "devexpress.richedit.core.21.1.3.nupkg.sha512",
         "devexpress.richedit.core.nuspec",
-        "lib/net452/DevExpress.RichEdit.v22.1.Core.dll",
-        "lib/net452/DevExpress.RichEdit.v22.1.Core.xml",
-        "lib/netstandard2.0/DevExpress.RichEdit.v22.1.Core.dll",
-        "lib/netstandard2.0/DevExpress.RichEdit.v22.1.Core.xml"
+        "lib/net452/DevExpress.RichEdit.v21.1.Core.dll",
+        "lib/net452/DevExpress.RichEdit.v21.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.RichEdit.v21.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.RichEdit.v21.1.Core.xml"
       ]
     },
-    "DevExpress.RichEdit.Export/22.1.4": {
-      "sha512": "VKJMXv4PUD2kNeI7QU+/gKVM81Zu/UcQbb3nAwkmCICubti9LDBK5sOlOFGUVTQ4ZDK2Ggs6zZhnoxNoYvZuXg==",
+    "DevExpress.RichEdit.Export/21.1.3": {
+      "sha512": "9ED+oau4PtSVb6cLOOa5qChC3i7VEe+Mk4L6hIpRvSo2+0rnApT/UFko9ve7PXo6NuN1DPLYqgIO9UXPYWirUw==",
       "type": "package",
-      "path": "devexpress.richedit.export/22.1.4",
+      "path": "devexpress.richedit.export/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.richedit.export.22.1.4.nupkg.sha512",
+        "devexpress.richedit.export.21.1.3.nupkg.sha512",
         "devexpress.richedit.export.nuspec",
-        "lib/net452/DevExpress.RichEdit.v22.1.Export.dll",
-        "lib/netstandard2.0/DevExpress.RichEdit.v22.1.Export.dll"
+        "lib/net452/DevExpress.RichEdit.v21.1.Export.dll",
+        "lib/netstandard2.0/DevExpress.RichEdit.v21.1.Export.dll"
       ]
     },
-    "DevExpress.Sparkline.Core/22.1.4": {
-      "sha512": "sD4wfBLAFSMKNDkjEMGrE0mqe3Qj9g1hSbPvAXdMe2Si0bil+0+PgFuuVD5q9PrXb7YurRXyndC15OGGo89PiQ==",
+    "DevExpress.Sparkline.Core/21.1.3": {
+      "sha512": "OpjHAR5qaeEKU1CGBDD7PVxFL7jzwMYxVXjWXJB0g6QIgFRbh8Uq8Udghm1c+W6S3HM0AswKlMwTDa+T5TbdHA==",
       "type": "package",
-      "path": "devexpress.sparkline.core/22.1.4",
+      "path": "devexpress.sparkline.core/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.sparkline.core.22.1.4.nupkg.sha512",
+        "devexpress.sparkline.core.21.1.3.nupkg.sha512",
         "devexpress.sparkline.core.nuspec",
-        "lib/net452/DevExpress.Sparkline.v22.1.Core.dll",
-        "lib/net452/DevExpress.Sparkline.v22.1.Core.xml",
-        "lib/netstandard2.0/DevExpress.Sparkline.v22.1.Core.dll",
-        "lib/netstandard2.0/DevExpress.Sparkline.v22.1.Core.xml"
+        "lib/net452/DevExpress.Sparkline.v21.1.Core.dll",
+        "lib/net452/DevExpress.Sparkline.v21.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.Sparkline.v21.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.Sparkline.v21.1.Core.xml"
       ]
     },
-    "DevExpress.Utils/22.1.4": {
-      "sha512": "ebKw8opYRGyNo97eLypM7zsKg6K0foGlRbLc4DQt9P0Z4QFU7WosNROZicMob9fGgRn61Te8rcckNTpjRR7uyQ==",
+    "DevExpress.Utils/21.1.3": {
+      "sha512": "s+cL/erb+cZCJm+zms5+aTjXL+42FDDUsftMz+j5iTfgWpbKZvhLG+P0jFvFKcAe1i5/f+YPLf+iQYC76uhfrQ==",
       "type": "package",
-      "path": "devexpress.utils/22.1.4",
+      "path": "devexpress.utils/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.utils.22.1.4.nupkg.sha512",
+        "devexpress.utils.21.1.3.nupkg.sha512",
         "devexpress.utils.nuspec",
-        "lib/net452/DevExpress.Utils.v22.1.dll",
-        "lib/net452/DevExpress.Utils.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.Utils.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.Utils.v22.1.xml"
+        "lib/net452/DevExpress.Utils.v21.1.dll",
+        "lib/net452/DevExpress.Utils.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.Utils.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.Utils.v21.1.xml"
       ]
     },
-    "DevExpress.Win/22.1.4": {
-      "sha512": "fXwaXJzpUyu/NxjsUH3/fEjb8Xpp1HFVzfjYDyGyAauGoot46svppix2h2d5pt/FmNLrFV2KTeGSwE4yrRBfGA==",
+    "DevExpress.Win/21.1.3": {
+      "sha512": "T+zCkams3RvuZ8cuMErEfmu+9aFxgllXBmOQRs0Ph6M6spku80OuxhNbvG2eb0HoP20BDisZj4NpFxQFdLvMAA==",
       "type": "package",
-      "path": "devexpress.win/22.1.4",
+      "path": "devexpress.win/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.22.1.4.nupkg.sha512",
+        "devexpress.win.21.1.3.nupkg.sha512",
         "devexpress.win.nuspec",
-        "lib/net452/DevExpress.XtraNavBar.v22.1.dll",
-        "lib/net452/DevExpress.XtraNavBar.v22.1.xml",
-        "lib/net452/DevExpress.XtraWizard.v22.1.dll",
-        "lib/net452/DevExpress.XtraWizard.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraNavBar.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraNavBar.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraWizard.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraWizard.v22.1.xml"
+        "lib/net452/DevExpress.XtraNavBar.v21.1.dll",
+        "lib/net452/DevExpress.XtraNavBar.v21.1.xml",
+        "lib/net452/DevExpress.XtraWizard.v21.1.dll",
+        "lib/net452/DevExpress.XtraWizard.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraNavBar.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraNavBar.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraWizard.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraWizard.v21.1.xml"
       ]
     },
-    "DevExpress.Win.BonusSkins/22.1.4": {
-      "sha512": "Q/HfBXyP68CacFbgaxZVgo92DSKu3GffpPDUkfTtFuYIChKzMuvinKZ1CvV1DiitfqPNwh+UaGANGTd3xNjOug==",
+    "DevExpress.Win.BonusSkins/21.1.3": {
+      "sha512": "zKYfTaXy3gjOR+araTHWUCbCffmY71pYmydiY7fOYGsCTrDUUKT4CCHb4jHT6zQs5ruyG+uCUSEKkR+u5pUxbg==",
       "type": "package",
-      "path": "devexpress.win.bonusskins/22.1.4",
+      "path": "devexpress.win.bonusskins/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.bonusskins.22.1.4.nupkg.sha512",
+        "devexpress.win.bonusskins.21.1.3.nupkg.sha512",
         "devexpress.win.bonusskins.nuspec",
-        "lib/net452/DevExpress.BonusSkins.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.BonusSkins.v22.1.dll"
+        "lib/net452/DevExpress.BonusSkins.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.BonusSkins.v21.1.dll"
       ]
     },
-    "DevExpress.Win.Grid/22.1.4": {
-      "sha512": "HTLBOdTzHWVOVO3+XafWIVR8rlrCznR33ZKQqh1zXDWy09rbCooBHaPCOn37ZSUX6beDmKQDYBSDCKQS4fs7Bw==",
+    "DevExpress.Win.Grid/21.1.3": {
+      "sha512": "u46cHbcpjSv4OeotEbUPq1SPLMI/QizFPwx8/BC+DmSpUYxqEe1RDzSWKyjPVQbdIp+izA3dbeTq1wxSBdnHhA==",
       "type": "package",
-      "path": "devexpress.win.grid/22.1.4",
+      "path": "devexpress.win.grid/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.grid.22.1.4.nupkg.sha512",
+        "devexpress.win.grid.21.1.3.nupkg.sha512",
         "devexpress.win.grid.nuspec",
-        "lib/net452/DevExpress.XtraGrid.v22.1.dll",
-        "lib/net452/DevExpress.XtraGrid.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraGrid.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraGrid.v22.1.xml"
+        "lib/net452/DevExpress.XtraGrid.v21.1.dll",
+        "lib/net452/DevExpress.XtraGrid.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraGrid.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraGrid.v21.1.xml"
       ]
     },
-    "DevExpress.Win.Navigation/22.1.4": {
-      "sha512": "1s6ZtFDqHgBPdDGjIJGaDAGbXGC6DuwP6HshKtU+NLsZiQQExinyRgD6Qi3s5kpvGiZQvwnEw+4bGJuH2hm4Jg==",
+    "DevExpress.Win.Navigation/21.1.3": {
+      "sha512": "VrizwPj+Ppu656iMw8QDwVY0UE20PzU7Na2E5xL6SpCBl2UorqycXvxhhzQHrspk20Z3R1IpKv2XENNV6hjROg==",
       "type": "package",
-      "path": "devexpress.win.navigation/22.1.4",
+      "path": "devexpress.win.navigation/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.navigation.22.1.4.nupkg.sha512",
+        "devexpress.win.navigation.21.1.3.nupkg.sha512",
         "devexpress.win.navigation.nuspec",
-        "lib/net452/DevExpress.XtraBars.v22.1.dll",
-        "lib/net452/DevExpress.XtraBars.v22.1.xml",
-        "lib/net452/DevExpress.XtraEditors.v22.1.dll",
-        "lib/net452/DevExpress.XtraEditors.v22.1.xml",
-        "lib/net452/DevExpress.XtraLayout.v22.1.dll",
-        "lib/net452/DevExpress.XtraLayout.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraBars.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraBars.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraEditors.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraEditors.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraLayout.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraLayout.v22.1.xml"
+        "lib/net452/DevExpress.XtraBars.v21.1.dll",
+        "lib/net452/DevExpress.XtraBars.v21.1.xml",
+        "lib/net452/DevExpress.XtraEditors.v21.1.dll",
+        "lib/net452/DevExpress.XtraEditors.v21.1.xml",
+        "lib/net452/DevExpress.XtraLayout.v21.1.dll",
+        "lib/net452/DevExpress.XtraLayout.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraBars.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraBars.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraEditors.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraEditors.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraLayout.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraLayout.v21.1.xml"
       ]
     },
-    "DevExpress.Win.PivotGrid/22.1.4": {
-      "sha512": "mvA99zF9uCCR47r3GNeW4bCo9S7D8IGc2YFIfRczhjU98W9um9AWm4Pi2qrh6JXf5RShyBUoKk3VhSvDSRzmPw==",
+    "DevExpress.Win.PivotGrid/21.1.3": {
+      "sha512": "nVNaEaHPqfTL/ywqYVaealccfe+N3KY0femDhMoHRQ7k7zxGpUXMOBXff5JXFm4rcKSuVKNE9c7myIFnMeWCzg==",
       "type": "package",
-      "path": "devexpress.win.pivotgrid/22.1.4",
+      "path": "devexpress.win.pivotgrid/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.pivotgrid.22.1.4.nupkg.sha512",
+        "devexpress.win.pivotgrid.21.1.3.nupkg.sha512",
         "devexpress.win.pivotgrid.nuspec",
-        "lib/net452/DevExpress.XtraPivotGrid.v22.1.dll",
-        "lib/net452/DevExpress.XtraPivotGrid.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraPivotGrid.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraPivotGrid.v22.1.xml"
+        "lib/net452/DevExpress.XtraPivotGrid.v21.1.dll",
+        "lib/net452/DevExpress.XtraPivotGrid.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraPivotGrid.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraPivotGrid.v21.1.xml"
       ]
     },
-    "DevExpress.Win.Printing/22.1.4": {
-      "sha512": "Os9buszvemMFk6EdR545VK3WW1HTxzUEypWE6usYtgg12tPN9EgpzHtz4BnHI6wUKqc6U069V/yZw/ryMifVSQ==",
+    "DevExpress.Win.Printing/21.1.3": {
+      "sha512": "url1t6vwjxCEWdQbg3x5XsxFj/uyuu43aAlMtGskbWPVqLa2R/AkXFeLNlEsrusvOKQXm+WYqF9YtbrR/vjnTg==",
       "type": "package",
-      "path": "devexpress.win.printing/22.1.4",
+      "path": "devexpress.win.printing/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.printing.22.1.4.nupkg.sha512",
+        "devexpress.win.printing.21.1.3.nupkg.sha512",
         "devexpress.win.printing.nuspec",
-        "lib/net452/DevExpress.XtraPrinting.v22.1.dll",
-        "lib/net452/DevExpress.XtraPrinting.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraPrinting.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraPrinting.v22.1.xml"
+        "lib/net452/DevExpress.XtraPrinting.v21.1.dll",
+        "lib/net452/DevExpress.XtraPrinting.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraPrinting.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraPrinting.v21.1.xml"
       ]
     },
-    "DevExpress.Win.RichEdit/22.1.4": {
-      "sha512": "T21AUdA7ChH9QXFYNn7oCqtz2Xrm8yncD6iz5RwpAPOBfJB94VuiNLOjywa2+atkSb9IQ6JfZvnyvn0hbxS+iw==",
+    "DevExpress.Win.RichEdit/21.1.3": {
+      "sha512": "rEs5jkxtuWPK2kksIg985sTggEE+7JYMOH9FFNVHnlblW5p/7Bwo5BgQBKm6EDl2CYxXNR/gO+CaHEfjflJI6A==",
       "type": "package",
-      "path": "devexpress.win.richedit/22.1.4",
+      "path": "devexpress.win.richedit/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.richedit.22.1.4.nupkg.sha512",
+        "devexpress.win.richedit.21.1.3.nupkg.sha512",
         "devexpress.win.richedit.nuspec",
-        "lib/net452/DevExpress.XtraRichEdit.v22.1.dll",
-        "lib/net452/DevExpress.XtraRichEdit.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraRichEdit.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraRichEdit.v22.1.xml"
+        "lib/net452/DevExpress.XtraRichEdit.v21.1.dll",
+        "lib/net452/DevExpress.XtraRichEdit.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraRichEdit.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraRichEdit.v21.1.xml"
       ]
     },
-    "DevExpress.Win.TreeList/22.1.4": {
-      "sha512": "y82wvlpwwq9APT4h2qPfaE/iE2XJ9BsV3Xn+bJa2vljtCSVrGFDXnFfWz6LKpGHDzs33EtG8oTc+rs3CpuVibg==",
+    "DevExpress.Win.TreeList/21.1.3": {
+      "sha512": "uMTHpOzavFBkycp7h8DQKmCkIR4/6HKJyx7zUmabesRjMNAe/m3pvLZlFqzWW4I3sELAigIIvwcphPcqffTmyA==",
       "type": "package",
-      "path": "devexpress.win.treelist/22.1.4",
+      "path": "devexpress.win.treelist/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.treelist.22.1.4.nupkg.sha512",
+        "devexpress.win.treelist.21.1.3.nupkg.sha512",
         "devexpress.win.treelist.nuspec",
-        "lib/net452/DevExpress.XtraTreeList.v22.1.dll",
-        "lib/net452/DevExpress.XtraTreeList.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraTreeList.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraTreeList.v22.1.xml"
+        "lib/net452/DevExpress.XtraTreeList.v21.1.dll",
+        "lib/net452/DevExpress.XtraTreeList.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraTreeList.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraTreeList.v21.1.xml"
       ]
     },
-    "DevExpress.Win.VerticalGrid/22.1.4": {
-      "sha512": "hhJWZw5GoESy+wTUmdP0tQ16aXG2AxRE+WJuC1MY8OTShtGrIL3s/M2uQ4p2KrnB32ihk2vAojGmH2aZTYyJcA==",
+    "DevExpress.Win.VerticalGrid/21.1.3": {
+      "sha512": "rGI3U0AHCt514khMl2dUHbttAyR7w+rv/2dKIayG2EIYDAwqWat5Ms4VUcxMce/naP1a3ZaFFJh2DXxOeAAGww==",
       "type": "package",
-      "path": "devexpress.win.verticalgrid/22.1.4",
+      "path": "devexpress.win.verticalgrid/21.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.verticalgrid.22.1.4.nupkg.sha512",
+        "devexpress.win.verticalgrid.21.1.3.nupkg.sha512",
         "devexpress.win.verticalgrid.nuspec",
-        "lib/net452/DevExpress.XtraVerticalGrid.v22.1.dll",
-        "lib/net452/DevExpress.XtraVerticalGrid.v22.1.xml",
-        "lib/netcoreapp3.0/DevExpress.XtraVerticalGrid.v22.1.dll",
-        "lib/netcoreapp3.0/DevExpress.XtraVerticalGrid.v22.1.xml"
+        "lib/net452/DevExpress.XtraVerticalGrid.v21.1.dll",
+        "lib/net452/DevExpress.XtraVerticalGrid.v21.1.xml",
+        "lib/netcoreapp3.0/DevExpress.XtraVerticalGrid.v21.1.dll",
+        "lib/netcoreapp3.0/DevExpress.XtraVerticalGrid.v21.1.xml"
       ]
     },
     "Newtonsoft.Json/13.0.1": {
@@ -1453,10 +1381,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "DevExpress.RichEdit.Core >= 22.1.4",
-      "DevExpress.Win >= 22.1.4",
-      "DevExpress.Win.BonusSkins >= 22.1.4",
-      "DevExpress.Win.RichEdit >= 22.1.4",
+      "DevExpress.RichEdit.Core >= 21.1.3",
+      "DevExpress.Win >= 21.1.3",
+      "DevExpress.Win.BonusSkins >= 21.1.3",
+      "DevExpress.Win.RichEdit >= 21.1.3",
       "NPOI >= 2.5.4",
       "Newtonsoft.Json >= 13.0.1",
       "WinControls >= 1.0.0"
@@ -1464,8 +1392,9 @@
   },
   "packageFolders": {
     "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1477,21 +1406,23 @@
       "outputPath": "E:\\githeb\\QA\\QA\\Lemon\\QA\\QA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net48"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1517,19 +1448,19 @@
         "dependencies": {
           "DevExpress.RichEdit.Core": {
             "target": "Package",
-            "version": "[22.1.4, )"
+            "version": "[21.1.3, )"
           },
           "DevExpress.Win": {
             "target": "Package",
-            "version": "[22.1.4, )"
+            "version": "[21.1.3, )"
           },
           "DevExpress.Win.BonusSkins": {
             "target": "Package",
-            "version": "[22.1.4, )"
+            "version": "[21.1.3, )"
           },
           "DevExpress.Win.RichEdit": {
             "target": "Package",
-            "version": "[22.1.4, )"
+            "version": "[21.1.3, )"
           },
           "NPOI": {
             "target": "Package",
@@ -1540,7 +1471,7 @@
             "version": "[13.0.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

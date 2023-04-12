@@ -1,2 +1,16 @@
-C:\Users\Administrator\.nuget\packages\xamarin.android.support.core.ui\25.4.0.2\proguard\proguard.txt;E:\visual Studio 2022\zhuminghang\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\0054b2f2-ae47-4918-8fb6-874d51da0401.txt
-C:\Users\Administrator\.nuget\packages\xamarin.forms\5.0.0.2012\buildTransitive\MonoAndroid10\proguard.cfg;E:\visual Studio 2022\zhuminghang\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\64cab395-2fcb-4f74-8b94-9e8fb152def1.cfg
+C:\Users\Administrator\.nuget\packages\xamarin.android.support.core.ui\25.4.0.2\proguard\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\6b917f31-fbdb-4650-95f4-9d139370397c.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\52\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\46d10940-1b91-4166-a054-0c7afd583305.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\53\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\d0033ade-29db-4d49-a66f-342f22fad355.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\54\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\ef2b826e-412f-4d7e-8e64-b704952ba227.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\57\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\125bdacb-b4f5-40d1-949b-4dff409e8d7a.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\58\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\324f7e0d-4943-4f4d-ae5d-22244d248168.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\59\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\c27cba0f-018d-446a-bbd5-2e915051ef75.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\63\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\431560ea-7ffe-4cb6-b10a-547be3f9c5cb.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\65\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\d2cfeb85-ec6b-4f42-86e7-d8abbb8dd048.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\69\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\894e139c-2089-4fcf-9d8e-b38e8739b6b4.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\70\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\830c8b12-5ba8-484f-b15d-df1478509609.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\73\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\316b68cd-fcf9-4925-b75a-566b062e0566.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\76\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\73dd9fda-fd1c-48a2-83dd-67f1c74dcc56.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\78\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\483e5642-89fe-43ec-9363-b6eacbd6c4cd.txt
+E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\lp\82\jl\proguard.txt;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\3e38699a-59b4-40d9-9f7e-90cb0b873853.txt
+C:\Users\Administrator\.nuget\packages\xamarin.forms\5.0.0.2012\buildTransitive\MonoAndroid10\proguard.cfg;E:\githeb\QA\QA\Lemon\QA\WinApp\WinApp.Android\obj\Debug\110\androidx\proguard\03605e58-a64b-4040-9fcf-9bc1d57c7d77.cfg
