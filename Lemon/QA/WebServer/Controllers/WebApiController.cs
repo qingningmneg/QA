@@ -1076,9 +1076,8 @@ namespace WebServer.Controllers
         #endregion
 
         #region 查询
-
         /// <summary>
-        /// 登录方法
+        /// 
         /// </summary>
         /// <param name="Parameters"></param>
         /// <returns></returns> 
@@ -1097,8 +1096,74 @@ namespace WebServer.Controllers
 
             return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns> 
+        [HttpPost]
+        public ActionResult selelctSubjectChildInfoOrderBy([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = new DataTable();
+
+            var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+            var subject_guid = ParamsJson.subject_guid;
+
+            string strSql = $@"select * from SubjectChildInfo where subject_guid = '{subject_guid}' Order By ruid asc";
+
+            Result = SqlHelper.ExecuteQuery(strSql);
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns> 
+        [HttpPost]
+        public ActionResult selelctSubjectChildOptionInfoOrderBy([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = new DataTable();
+
+            var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+            var subject_child_guid = ParamsJson.subject_child_guid;
+
+            string strSql = $@"select * from SubjectChildOptionInfo where subject_child_guid = '{subject_child_guid}' Order by newid()";
+
+            Result = SqlHelper.ExecuteQuery(strSql);
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Parameters"></param>
+        /// <returns></returns> 
+        [HttpPost]
+        public ActionResult selelctExamSubjectInfoDelete([FromBody] JsonElement Parameters)
+        {
+            DataTable Result = new DataTable();
+
+            var ParamsJson = JsonConvert.DeserializeObject<dynamic>(Parameters.ToString());
+
+            var exam_guid = ParamsJson.exam_guid;
+
+            string strSql = $@"select * ,sc='删除' from ExamSubjectInfo where exam_guid = '{exam_guid}' ";
+
+            Result = SqlHelper.ExecuteQuery(strSql);
+
+            return new ContentResult() { Content = JsonConvert.SerializeObject(Result), ContentType = "application/json", StatusCode = 200 };
+        }
+        
         #endregion
 
         #endregion
+
+
     }
 }

@@ -177,7 +177,7 @@ namespace QA
                 {
                     this.yearguid = dr.Rows[0]["guid"].ToString();
 
-                    var dt = $"select * ,sc='删除' from ExamSubjectInfo where exam_guid = @exam_guid ".EQ(("@exam_guid", this.yearguid));
+                    var dt = ClassMethod.lemonSelelctExamSubjectInfoDelete(this.yearguid);
                     if (dt != null && dt.Rows.Count > 0)
                     {
                         this.dataGridView.DataSource = dt;

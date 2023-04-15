@@ -216,7 +216,7 @@ namespace QA
             data.Columns.Add("subject_content2");
             if (pattern == "随机考题")
             {
-                var dt = ClassMethod.lemonselelctExamInfoGUID(guid);
+                var dt = ClassMethod.lemonSelelctExamInfoGUID(guid);
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     dataTable = dt;
@@ -370,7 +370,7 @@ namespace QA
             btnlower.Enabled = false;
             btnLast.Enabled = false;
             this.lblload.Hide();
-            var dt_SubjectChildInfo = $@"select * from SubjectChildInfo where subject_guid = @subject_guid Order By ruid asc".EQ(("@subject_guid", answer_guid));//小题数量
+            var dt_SubjectChildInfo = ClassMethod.lemonSelelctSubjectChildInfoOrderBy(answer_guid);//小题数量
             if (dt_SubjectChildInfo != null && dt_SubjectChildInfo.Rows.Count > 0)
             {
                 var count_SubjectChildInfo = dt_SubjectChildInfo.Rows.Count;//答案总个数
@@ -433,7 +433,7 @@ namespace QA
                         ExtAnswer.ExtOptions1.RtfText = SqlHelper.RtxBytesToString((Convert.FromBase64String(subject_child_answer2.ToString())));
                     }
 
-                    var dt_SubjectChildOptionInfo = $@"select * from SubjectChildOptionInfo where subject_child_guid = @subject_child_guid Order by newid()".EQ(("@subject_child_guid", guid_SubjectChildInfo));//答案
+                    var dt_SubjectChildOptionInfo = ClassMethod. lemonSelelctSubjectChildOptionInfoOrderBy( guid_SubjectChildInfo.ToString());//答案
                     if (dt_SubjectChildOptionInfo != null && dt_SubjectChildOptionInfo.Rows.Count > 0)
                     {
                         var count_SubjectChildOptionInfo = dt_SubjectChildOptionInfo.Rows.Count;

@@ -1,0 +1,215 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15243EDC-0A89-4065-96EB-AA3C55C5B8F6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebLemonQA</RootNamespace>
+    <AssemblyName>WebLemonQA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44380</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\image\aaa.png" />
+    <Content Include="Assets\image\BAX8]3%40U_}AI40T{~G3~K4C.png" />
+    <Content Include="Assets\image\image.jpg" />
+    <Content Include="Assets\image\images.jpg" />
+    <Content Include="Assets\image\preview.jpg" />
+    <Content Include="Assets\image\头像.jpg" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.css" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.rtl.css" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.css" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.css" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap.css" />
+    <Content Include="Assets\Lib\css\bootstrap.min.css" />
+    <Content Include="Assets\Lib\css\bootstrap.rtl.css" />
+    <Content Include="Assets\Lib\css\bootstrap.rtl.min.css" />
+    <Content Include="Assets\Lib\js\bootstrap.bundle.js" />
+    <Content Include="Assets\Lib\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\Lib\js\bootstrap.esm.js" />
+    <Content Include="Assets\Lib\js\bootstrap.esm.min.js" />
+    <Content Include="Assets\Lib\js\bootstrap.js" />
+    <Content Include="Assets\Lib\js\bootstrap.min.js" />
+    <Content Include="Views\Login.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Lib\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap.min.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap.rtl.css.map" />
+    <Content Include="Assets\Lib\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Assets\Lib\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.esm.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.esm.min.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.js.map" />
+    <Content Include="Assets\Lib\js\bootstrap.min.js.map" />
+    <Content Include="Assets\image\tumblr_0943e295f7b968cd8f657d5a16f4c9b4_61c6598d_500.webp" />
+    <Content Include="Assets\image\tumblr_19754213f7c4ee3eef9de3f1d078948b_2cc8c311_500.webp" />
+    <Content Include="Assets\image\tumblr_2f4337373374f24ed6f0767fc87bc37a_9a72898c_500.webp" />
+    <Content Include="Assets\image\tumblr_32b830d5d2ca34d4d49c19e9c011ed4f_76f10a42_500.webp" />
+    <Content Include="Assets\image\tumblr_35ea285663dc28c401f54d73165041ae_5fd23a5c_500.webp" />
+    <Content Include="Assets\image\tumblr_36def77a971b731d95147c1a9d10fc04_e241ad8b_500.webp" />
+    <Content Include="Assets\image\tumblr_50f47c82d8064d702b19beb5898d246a_f32a695f_500.webp" />
+    <Content Include="Assets\image\tumblr_5a232d5c0999d02388d78e5c1025f94f_0306dc89_500.webp" />
+    <Content Include="Assets\image\tumblr_5b2851954889ca82cbbec5cd91eb5085_dde25d7f_500.webp" />
+    <Content Include="Assets\image\tumblr_61e852003535a1cef99bacdc4c6afbd4_b175c2fc_500.webp" />
+    <Content Include="Assets\image\tumblr_636401b5e827710dc9ad7fe35d6333fb_9cd42fa7_500.webp" />
+    <Content Include="Assets\image\tumblr_6e92a8c0d8c39fca8cd8ee4c1e244fd3_cb01f56c_500.webp" />
+    <Content Include="Assets\image\tumblr_71c50f010f0de5b797935a3aceaf1bf5_7d627d51_500.webp" />
+    <Content Include="Assets\image\tumblr_76e2859e220ada95b84c7af062e88e11_26126bb4_500.webp" />
+    <Content Include="Assets\image\tumblr_7965afc20a6653bd0da7d312043cbedf_1ba04913_500.webp" />
+    <Content Include="Assets\image\tumblr_7b60a1af3a626080af95e74a05a73cec_9fd9420e_500.webp" />
+    <Content Include="Assets\image\tumblr_a4128288be7be4f62cc145c243c5dc95_7e2bc0e2_500.webp" />
+    <Content Include="Assets\image\tumblr_ab3b87a6b0a2582c0a8a379ddb37d849_71a1b5fb_500.webp" />
+    <Content Include="Assets\image\tumblr_b1856b576593e4a87a7c4980305ee6eb_12eb00d8_500.webp" />
+    <Content Include="Assets\image\tumblr_c2d0b50f564905f43d23e726d0aa294f_02875bfc_500.webp" />
+    <Content Include="Assets\image\tumblr_c49d04eef2a2dffe199039cbcc90a98a_7796c2bc_500.webp" />
+    <Content Include="Assets\image\tumblr_d506b69747e2b5b972c5e1f256031ec9_90462a90_500.webp" />
+    <Content Include="Assets\image\tumblr_d77093e52c4dca29a0338bfa2fc5e1ef_bc6e7616_500.webp" />
+    <Content Include="Assets\image\tumblr_d8b4dd1060ab36921abbb5ff0969fc22_ed5f053c_500.webp" />
+    <Content Include="Assets\image\tumblr_e1b386d005a0eca0858fbbbe569597ac_b1884a0c_500.webp" />
+    <Content Include="Assets\image\tumblr_e2818e8733a515772af5ba74a95bb79d_c0c3046c_500.webp" />
+    <Content Include="Assets\image\tumblr_f228634fc0e0fcbb067b0a327f13d388_17395a35_500.webp" />
+    <Content Include="Assets\image\tumblr_fb4608e676643026f950e8fe89ae9587_86944d06_500.webp" />
+    <Content Include="Assets\image\tumblr_pwa4bogz4N1qze3hdo2_r1_500.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Modeis\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\Customer\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55042</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44380/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
